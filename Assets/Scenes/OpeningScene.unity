@@ -381,7 +381,7 @@ PrefabInstance:
     - target: {fileID: 8318984700524015050, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
       propertyPath: sceneName
-      value: LevelOne
+      value: LevelSelection
       objectReference: {fileID: 0}
     - target: {fileID: 8318984700524015050, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
@@ -397,6 +397,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318984700618863656, guid: 546a7c1295a7d4a9f87778efa2e963d5,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318984700618863657, guid: 546a7c1295a7d4a9f87778efa2e963d5,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318984700618863657, guid: 546a7c1295a7d4a9f87778efa2e963d5,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8318984700618863660, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
