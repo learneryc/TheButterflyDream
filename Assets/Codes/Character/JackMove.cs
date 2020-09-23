@@ -55,7 +55,7 @@ public class JackMove : MonoBehaviour
 
     void Jump(){
         if(Input.GetKeyDown(KeyCode.Space)) {    //如果按下空格
-
+            // AudioManager.instance.Play("Sound/jumping");
             pl.AddForce(new Vector2(0,jumpForce));   //给刚体一个向上的力
         }
     }

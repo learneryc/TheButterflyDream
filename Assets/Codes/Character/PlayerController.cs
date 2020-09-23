@@ -70,6 +70,8 @@ public abstract class PlayerController :MonoBehaviour
 
     protected void prefromJump()
     {
+        AudioManager.instance.Play("Sound/jumping");
+
         m_Anim.Play("Jump");
 
         m_rigidbody.velocity = new Vector2(0, 0);

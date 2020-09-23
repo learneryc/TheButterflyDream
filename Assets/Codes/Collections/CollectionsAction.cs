@@ -41,6 +41,7 @@ public class CollectionsAction : MonoBehaviour
     }
     
     void PickUp(){
+        AudioManager.instance.Play("Sound/pickup");
     	Destroy(gameObject);
     }
 }
