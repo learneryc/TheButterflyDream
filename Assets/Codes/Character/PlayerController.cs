@@ -102,7 +102,6 @@ public abstract class PlayerController :MonoBehaviour
             m_CapsulleCollider.enabled = false;
 
             StartCoroutine(GroundCapsulleColliderTimmerFuc());
-
         }
 
 
