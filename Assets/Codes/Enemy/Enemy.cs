@@ -7,11 +7,12 @@ public abstract class Enemy : MonoBehaviour
 {
     public int health;
     public int damage;
+    public Animator animator;
 
     // Start is called before the first frame update
     public void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,7 +25,8 @@ public abstract class Enemy : MonoBehaviour
     {
         if (health <= 0) 
         {
-            Destroy(gameObject);
+            animator.SetBool("Dead", true);
+            Destroy(gameObject, 0.5f);
         }
     }
 

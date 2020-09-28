@@ -7,7 +7,7 @@ public class EnemyDemon : Enemy
 
     private BoxCollider2D attackArea;
     private bool playerApproaching;
-    private Animator animator;
+
 
     // Start is called before the first frame update
     public void Start()
@@ -34,7 +34,7 @@ public class EnemyDemon : Enemy
         else 
         {
             animator.SetBool("Attack", false);
+            Debug.Log(base.health);
         }
-        
     }
 }
