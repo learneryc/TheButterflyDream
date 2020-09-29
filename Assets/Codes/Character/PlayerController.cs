@@ -9,6 +9,7 @@ public abstract class PlayerController :MonoBehaviour
     public int currentJumpCount = 0; 
     public bool isGrounded = true;
     public bool OnceJumpRayCheck = false;
+    public bool isDroppedDown = false;
 
     public bool Is_DownJump_GroundCheck = false;
     protected float m_MoveX;
@@ -17,6 +18,7 @@ public abstract class PlayerController :MonoBehaviour
     protected Animator m_Anim;
 
     [Header("[Setting]")]
+    public int curHealth = 4;
     public float MoveSpeed = 6;
     public int JumpCount = 2;
     public float jumpForce = 15f;

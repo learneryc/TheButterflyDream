@@ -5,8 +5,6 @@ using UnityEngine;
 public class Swordman : PlayerController
 {
 
- 
-
     private void Start()
     {
 
@@ -22,18 +20,18 @@ public class Swordman : PlayerController
     private void Update()
     {
 
-
-
         checkInput();
+
+        if (checkDropDown() && !isDroppedDown) {
+            curHealth--;
+            isDroppedDown = true;
+        }
 
         if (m_rigidbody.velocity.magnitude > 30)
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x - 0.1f, m_rigidbody.velocity.y - 0.1f);
 
         }
-
-
-
 
     }
 
@@ -191,7 +189,6 @@ public class Swordman : PlayerController
             {
                 prefromJump();
 
-
             }
             else
             {
@@ -213,10 +210,6 @@ public class Swordman : PlayerController
 
     }
 
-
-  
-
-
     protected override void LandingEvent()
     {
 
@@ -226,8 +219,17 @@ public class Swordman : PlayerController
 
     }
 
+    public void beAttacked() {
+        curHealth--;
+    }
 
-
+    public bool checkDropDown() {
+        if (m_rigidbody.position.y < -10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 
 }
