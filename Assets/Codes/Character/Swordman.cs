@@ -25,6 +25,14 @@ public class Swordman : PlayerController
         if (checkDropDown() && !isDroppedDown) {
             curHealth--;
             isDroppedDown = true;
+            System.Threading.Thread.Sleep(600);
+            Vector3 pos = m_rigidbody.position;
+            pos.x = -6;
+            pos.y = 4;
+            m_rigidbody.position = pos;
+        }
+        if (m_rigidbody.position.y > 3) {
+            isDroppedDown = false;
         }
 
         if (m_rigidbody.velocity.magnitude > 30)
