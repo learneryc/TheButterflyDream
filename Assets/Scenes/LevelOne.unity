@@ -5981,6 +5981,10 @@ MonoBehaviour:
   MoveSpeed: 6
   JumpCount: 2
   jumpForce: 15
+  SceneName: GameOver
+  transition: {fileID: 924902721}
+  trigger: CrossFade
+  transitionTime: 1
 --- !u!70 &2050180693
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

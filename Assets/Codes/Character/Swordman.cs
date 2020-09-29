@@ -1,9 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Swordman : PlayerController
 {
+    public string SceneName="GameOver";
+	public Animator transition;
+	public string trigger = "CrossFade";
+	public float transitionTime = 1f;
+
+    IEnumerator LoadLevel() {
+		if (trigger!="") {
+			transition.SetTrigger(trigger);
+			yield return new WaitForSeconds(transitionTime);
+		}
+		if (SceneName != "") SceneManager.LoadScene(SceneName);
+	}
 
     private void Start()
     {
@@ -19,11 +32,13 @@ public class Swordman : PlayerController
 
     private void Update()
     {
+        checkAlive();
 
         checkInput();
 
         if (checkDropDown() && !isDroppedDown) {
             curHealth--;
+            checkAlive();
             isDroppedDown = true;
             System.Threading.Thread.Sleep(600);
             Vector3 pos = m_rigidbody.position;
@@ -229,6 +244,7 @@ public class Swordman : PlayerController
 
     public void beAttacked() {
         curHealth--;
+        checkAlive();
     }
 
     public bool checkDropDown() {
@@ -237,6 +253,11 @@ public class Swordman : PlayerController
         } else {
             return false;
         }
+    }
+
+    private void checkAlive() {
+        if(curHealth <= 0)
+            StartCoroutine(LoadLevel());
     }
 
 
