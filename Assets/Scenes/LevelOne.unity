@@ -1225,7 +1225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: You need to find out the truth of this world.
+  storyText: "Instructions: \nUse arrow keys to move; Use space keys to jump;\nUse
+    mouse left key to attack; Use E to pick up items."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1252,7 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: Jack, you have things to do.
+  storyText: Jack, you need to find out the truth of this world.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1323,7 +1324,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 99
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1350,7 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 617, y: 73.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1364,7 +1365,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741706}
   selectedCommands:
-  - {fileID: 256741709}
+  - {fileID: 256741702}
   variables: []
   description: 
   stepPause: 0
