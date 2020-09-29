@@ -17,6 +17,13 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel());
     }
 
+    public void MoveToNextLevel()
+    {
+        sceneName = "LevelTwo";
+        trigger = "Crossfade";
+        StartCoroutine(LoadLevel());
+    }
+
     IEnumerator LoadLevel()
     {
     	yield return new WaitForSeconds(videoLength);

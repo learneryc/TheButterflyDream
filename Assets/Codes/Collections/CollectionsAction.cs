@@ -7,10 +7,8 @@ public class CollectionsAction : MonoBehaviour
 {
 	
 
-	public 
-	bool pickUpAllowed ;
-	public 
-	Text pickUpText;
+	public bool pickUpAllowed ;
+	public Text pickUpText;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +21,10 @@ public class CollectionsAction : MonoBehaviour
     {
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
+
+            GameObject.Find("LevelLoader").
+            GetComponent<LevelLoader>().MoveToNextLevel();
+            PersistentData.update();
         }
     }
 

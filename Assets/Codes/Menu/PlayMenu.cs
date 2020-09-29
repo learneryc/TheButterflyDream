@@ -2,13 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class PlayMenu : MonoBehaviour
 {
-	public string SceneName="";
+
 	public Animator transition;
 	public string trigger = "";
 	public float transitionTime = 1f;
+
+	public Button NewGame;
+	public Button Resume;
+	private string SceneName = "";
+
+	public void Start() {
+		SceneName = PersistentData.getScene();
+		if (SceneName == "LevelOne")
+			Resume.gameObject.SetActive(false);
+	}
+
+	public void PlayNewGame() {
+		PersistentData.update();
+		SceneName = "LevelOne";
+		PlayGame();
+	}
 
 	public void PlayGame() {
 		StartCoroutine(LoadLevel());
@@ -18,8 +35,10 @@ public class MainMenu : MonoBehaviour
 		if (trigger!="") {
 			transition.SetTrigger(trigger);
 			yield return new WaitForSeconds(transitionTime);
+			if (SceneName != "") SceneManager.LoadScene(SceneName);
 		}
-		if (SceneName != "") SceneManager.LoadScene(SceneName);
+
+		
 	}
 
 	public void QuitGame() {

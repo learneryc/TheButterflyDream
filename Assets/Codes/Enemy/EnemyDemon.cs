@@ -34,7 +34,7 @@ public class EnemyDemon : Enemy
         else 
         {
             animator.SetBool("Attack", false);
-            Debug.Log(base.health);
+            //Debug.Log(base.health);
         }
     }
 }
