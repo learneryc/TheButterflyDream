@@ -37,4 +37,13 @@ public abstract class Enemy : MonoBehaviour
     {
         health -= damage;
     }
+
+    // void OnTriggerEnter2D(Collider2D other){
+    //     Debug.Log("!");
+    //     if(other.gameObject.CompareTag("Weapon")){
+    //         int damage = other.gameObject.getDamage();
+    //         Debug.Log(damage);
+    //         TakeDamage(damage);
+    //     }
+    // }
 }

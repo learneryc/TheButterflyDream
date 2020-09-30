@@ -215,14 +215,14 @@ GameObject:
   m_Component:
   - component: {fileID: 35433813}
   - component: {fileID: 35433818}
-  - component: {fileID: 35433817}
   - component: {fileID: 35433816}
   - component: {fileID: 35433815}
   - component: {fileID: 35433814}
   - component: {fileID: 35433819}
+  - component: {fileID: 35433817}
   m_Layer: 10
   m_Name: Demon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!212 &35433818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.31884682, y: -0.09299731}
@@ -386,7 +386,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8611324, y: 0.79748535}
+  m_Size: {x: 0.8, y: 0.79748535}
   m_EdgeRadius: 0
 --- !u!1 &54746966
 GameObject:
@@ -2669,6 +2669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866144807}
+  - component: {fileID: 866144808}
   m_Layer: 11
   m_Name: Weapon
   m_TagString: Untagged
@@ -2692,6 +2693,19 @@ Transform:
   m_Father: {fileID: 1798294490}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40.397003}
+--- !u!114 &866144808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866144806}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ab47b1f16264595abdbbcf27923bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &866398206
 GameObject:
   m_ObjectHideFlags: 0
@@ -5866,9 +5880,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2023909757}
   - component: {fileID: 2023909758}
+  - component: {fileID: 2023909759}
+  - component: {fileID: 2023909760}
   m_Layer: 11
   m_Name: Weapon-Sword
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5882,7 +5898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023909756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 866144807}
@@ -5939,6 +5955,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &2023909759
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023909756}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5064954, y: 0.11925681}
+    oldSize: {x: 0.31, y: 1.1}
+    newSize: {x: 0.31, y: 1.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.14298642, y: 0.44881752}
+      - {x: 0.15298642, y: 0.5588175}
+      - {x: 0.15298642, y: 0.7788175}
+      - {x: 0.07298642, y: 0.9588175}
+      - {x: 0.04298642, y: 0.9688175}
+      - {x: -0.05701358, y: 0.9688175}
+      - {x: -0.15701358, y: 0.7888175}
+      - {x: -0.15701358, y: 0.4988175}
+      - {x: -0.107013576, y: 0.22881751}
+      - {x: -0.15701358, y: 0.17881751}
+      - {x: -0.15701358, y: 0.07881752}
+      - {x: -0.09701358, y: -0.08118248}
+      - {x: -0.05701358, y: -0.13118248}
+      - {x: 0.07298642, y: -0.13118248}
+      - {x: 0.15298642, y: 0.02881752}
+      - {x: 0.15298642, y: 0.18881752}
+      - {x: 0.10298642, y: 0.25881752}
+--- !u!114 &2023909760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023909756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ab47b1f16264595abdbbcf27923bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!1 &2050180691
 GameObject:
   m_ObjectHideFlags: 0

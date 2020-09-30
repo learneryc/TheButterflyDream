@@ -16,6 +16,7 @@ public abstract class PlayerController :MonoBehaviour
     public Rigidbody2D m_rigidbody;
     protected CapsuleCollider2D m_CapsulleCollider;
     protected Animator m_Anim;
+    protected Collider2D m_weapon;
 
     [Header("[Setting]")]
     public int curHealth = 4;

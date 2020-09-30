@@ -10,6 +10,7 @@ public class Swordman : PlayerController
 	public string trigger = "CrossFade";
 	public float transitionTime = 1f;
 
+
     IEnumerator LoadLevel() {
 		if (trigger!="") {
 			transition.SetTrigger(trigger);
@@ -20,12 +21,9 @@ public class Swordman : PlayerController
 
     private void Start()
     {
-
         m_CapsulleCollider  = this.transform.GetComponent<CapsuleCollider2D>();
         m_Anim = this.transform.Find("model").GetComponent<Animator>();
         m_rigidbody = this.transform.GetComponent<Rigidbody2D>();
-  
-
     }
 
 
@@ -105,7 +103,7 @@ public class Swordman : PlayerController
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             if (Input.GetKey(KeyCode.Mouse0))
-            {
+            {   
                 m_Anim.Play("Attack");
                 AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
             }
@@ -171,7 +169,7 @@ public class Swordman : PlayerController
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-
+            
 
             if (isGrounded)
             {
@@ -191,7 +189,6 @@ public class Swordman : PlayerController
                 transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
 
             }
-
 
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
@@ -259,6 +256,12 @@ public class Swordman : PlayerController
         if(curHealth <= 0)
             StartCoroutine(LoadLevel());
     }
+    
+    //  public void OnTriggerEnter2D(Collider2D other){
+    //     if(other.gameObject.CompareTag("Enemy")){
+    //        beAttacked();
+    //     }
+    // }
 
 
 }

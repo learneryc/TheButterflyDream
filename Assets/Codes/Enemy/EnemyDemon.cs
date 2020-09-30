@@ -37,4 +37,11 @@ public class EnemyDemon : Enemy
             //Debug.Log(base.health);
         }
     }
+
+    // public void OnTriggerEnter2D(Collider2D other){
+    //     if(other.gameObject.CompareTag("Player")){
+    //         //other.GetComponent<Enemy>().TakeDamage(damage);
+    //         Swordman.beAttacked();
+    //     }
+    // }
 }
