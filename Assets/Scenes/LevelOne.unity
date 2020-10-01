@@ -218,8 +218,9 @@ GameObject:
   - component: {fileID: 35433816}
   - component: {fileID: 35433815}
   - component: {fileID: 35433814}
-  - component: {fileID: 35433819}
   - component: {fileID: 35433817}
+  - component: {fileID: 35433820}
+  - component: {fileID: 35433819}
   m_Layer: 10
   m_Name: Demon
   m_TagString: Enemy
@@ -235,8 +236,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35433812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.080001, y: -3.92, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 2.535, y: -3.966, z: 0}
+  m_LocalScale: {x: 1.33269, y: 1.33269, z: 0.88846}
   m_Children: []
   m_Father: {fileID: 642084807}
   m_RootOrder: 1
@@ -255,10 +256,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   damage: 1
-  animator: {fileID: 0}
-  sr: {fileID: 0}
   originalColor: {r: 0, g: 0, b: 0, a: 0}
-  flashTime: 0
+  runrang: 3
+  attackrang: 1.5
+  runspeed: 0.5
+  attackAllowed: 0
+  CurrentState: 0
 --- !u!95 &35433815
 Animator:
   serializedVersion: 3
@@ -302,14 +305,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35433812}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -365,7 +368,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &35433819
+--- !u!111 &35433819
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35433812}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!61 &35433820
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,10 +396,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.31884682, y: -0.09299731}
+  m_Offset: {x: -0.54780686, y: -0.10429585}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 0.57, y: 0.62, z: 1.09, w: 0.88}
+    pivot: {x: 0.3675711, y: 0.5}
     oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -389,7 +407,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.79748535}
+  m_Size: {x: 0.65368205, y: 0.98711944}
   m_EdgeRadius: 0
 --- !u!1 &54746966
 GameObject:
@@ -5170,10 +5188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   damage: 1
-  animator: {fileID: 0}
-  sr: {fileID: 0}
   originalColor: {r: 0, g: 0, b: 0, a: 0}
-  flashTime: 0
 --- !u!1 &1798294489
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,6 +6079,7 @@ MonoBehaviour:
   transition: {fileID: 924902721}
   trigger: CrossFade
   transitionTime: 1
+  myRenderer: []
 --- !u!70 &2050180693
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

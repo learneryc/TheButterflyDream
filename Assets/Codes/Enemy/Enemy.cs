@@ -7,17 +7,16 @@ public abstract class Enemy : MonoBehaviour
 {
     public int health;
     public int damage;
-    public Animator animator;
-    public SpriteRenderer sr;
+    protected Animator animator;
+    protected SpriteRenderer sr;
     public Color originalColor;
-    public float flashTime;
     private Swordman jack;
+
 
     // Start is called before the first frame update
     public void Start()
     {
         jack = GameObject.FindGameObjectWithTag("Player").GetComponent<Swordman>();
-        flashTime = 0.2f;
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
@@ -42,8 +41,9 @@ public abstract class Enemy : MonoBehaviour
     //        2. other.GetComponent<Enemy>().TakeDamage(damage);
     public void TakeDamage(int damage) 
     {
-        FlashColor(flashTime);
+        FlashColor(0.2f);
         health -= damage;
+        animator.Play("hurt");
     }
 
     public void FlashColor(float time)
@@ -59,7 +59,6 @@ public abstract class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
         if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             if(jack != null)
@@ -68,4 +67,5 @@ public abstract class Enemy : MonoBehaviour
             }
         }
     }
+    
 }
