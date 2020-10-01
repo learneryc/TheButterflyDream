@@ -9,7 +9,9 @@ public class Swordman : PlayerController
 	public Animator transition;
 	public string trigger = "CrossFade";
 	public float transitionTime = 1f;
+    public Renderer[] myRenderer;
 
+ 
 
     IEnumerator LoadLevel() {
 		if (trigger!="") {
@@ -21,6 +23,7 @@ public class Swordman : PlayerController
 
     private void Start()
     {
+        myRenderer = GetComponentsInChildren<Renderer>();
         m_CapsulleCollider  = this.transform.GetComponent<CapsuleCollider2D>();
         m_Anim = this.transform.Find("model").GetComponent<Animator>();
         m_rigidbody = this.transform.GetComponent<Rigidbody2D>();
@@ -239,9 +242,10 @@ public class Swordman : PlayerController
 
     }
 
-    public void beAttacked() {
-        curHealth--;
+    public void beAttacked(int damage) {
+        curHealth-= damage;
         checkAlive();
+        BlinkPlayer();
     }
 
     public bool checkDropDown() {
@@ -257,11 +261,27 @@ public class Swordman : PlayerController
             StartCoroutine(LoadLevel());
     }
     
-    //  public void OnTriggerEnter2D(Collider2D other){
-    //     if(other.gameObject.CompareTag("Enemy")){
-    //        beAttacked();
-    //     }
-    // }
+    public void BlinkPlayer()
+    {
+        StartCoroutine(DoBlinks(2,0.2f));
+    }
 
+    IEnumerator DoBlinks(int numBlinks, float time)
+    {
+        for(int i =0;i < numBlinks*2;i++ )
+        {
+            foreach (Renderer component in myRenderer)
+            {
+                component.enabled = !component.enabled;
+            }
+            yield return new WaitForSeconds(time);
+        } 
+        
+        //myRenderer.enabled = true;
+        foreach (Renderer component in myRenderer)
+            {
+                component.enabled = true;
+            }
+    }
 
 }

@@ -12,7 +12,8 @@ public class EnemyDemon : Enemy
     // Start is called before the first frame update
     public void Start()
     {
-        base.Update();
+    	base.Start();
+        //base.Update();
         attackArea = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }

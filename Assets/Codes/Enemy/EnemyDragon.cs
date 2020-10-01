@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EnemyDragon : Enemy
 {
+
+
     // Start is called before the first frame update
     public void Start()
     {
-        base.Update();
+        base.Start();
     }
 
     // Update is called once per frame
