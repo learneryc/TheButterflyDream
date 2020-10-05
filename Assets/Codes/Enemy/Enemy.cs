@@ -17,6 +17,7 @@ public abstract class Enemy : MonoBehaviour
     public void Start()
     {
         jack = GameObject.FindGameObjectWithTag("Player").GetComponent<Swordman>();
+        animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
@@ -26,6 +27,7 @@ public abstract class Enemy : MonoBehaviour
     {
         checkWithHealth();
     }
+
 
     private void checkWithHealth()
     {
@@ -43,7 +45,7 @@ public abstract class Enemy : MonoBehaviour
     {
         FlashColor(0.2f);
         health -= damage;
-        animator.Play("hurt");
+        //animator.Play("hurt");
     }
 
     public void FlashColor(float time)
@@ -67,5 +69,4 @@ public abstract class Enemy : MonoBehaviour
             }
         }
     }
-    
 }

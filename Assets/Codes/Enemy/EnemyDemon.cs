@@ -28,9 +28,8 @@ public class EnemyDemon : Enemy
     public void Start()
     {
     	base.Start();
-        //base.Update();
         attackArea = GetComponent<BoxCollider2D>();
-        animator = GetComponent<Animator>();
+       
         Player = GameObject.FindWithTag("Player").transform;
         attackAllowed = true;
         originalPos = transform.position;
@@ -123,15 +122,19 @@ public class EnemyDemon : Enemy
                 {
                     CurrentState = EnemyState.idle;
                 }
-                if(distance2Player > attackrang/3)
+                if(distance2Player > attackrang* 0.8f)
                 {
                     transform.position = transform.position - new Vector3((transform.position.x - Player.position.x) * runspeed * Time.deltaTime,0,0);
-                    targetPos = Player.position;
                 }
+                targetPos = Player.position;
                 if(attackAllowed)
                 {
-                    StartCoroutine(EnemyAttacking());
-                    attackAllowed = false;
+                    if(!animator.GetBool("Dead"))
+                    {
+                        StartCoroutine(EnemyAttacking());
+                        attackAllowed = false;
+                    }
+                    
                 }
                 break;
 
