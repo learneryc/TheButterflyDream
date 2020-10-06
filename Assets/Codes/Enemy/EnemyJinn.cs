@@ -33,24 +33,29 @@ public class EnemyJinn : Enemy
             }
             else
             {
-                if(moveingRight){
-                    transform.eulerAngles = new Vector3(0,-180,0);
-                    moveingRight = false;
-                }
-                else
-                {
-                    transform.eulerAngles = new Vector3(0,0,0);
-                    moveingRight = true;
-                }
-
-                if ( i == 0)
-                {
-                    i = 1;
-                }
-                else
+                i++ ;
+                if ( i == movePos.Length)
                 {
                     i = 0;
                 }
+                // change direct 
+                if(moveingRight){
+                    if( movePos[i].position.x > transform.position.x)
+                    {
+                        transform.eulerAngles = new Vector3(0,-180,0);
+                        moveingRight = false;
+                    }
+                }
+                else
+                {
+                    if( movePos[i].position.x < transform.position.x)
+                    {
+                        transform.eulerAngles = new Vector3(0,0,0);
+                        moveingRight = true;
+                    }
+                }
+
+                
 
                 waitTime  = wait;
             }
