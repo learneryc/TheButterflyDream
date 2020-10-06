@@ -11,8 +11,6 @@ public class Swordman : PlayerController
 	public float transitionTime = 1f;
     public Renderer[] myRenderer;
 
- 
-
     IEnumerator LoadLevel() {
 		if (trigger!="") {
 			transition.SetTrigger(trigger);

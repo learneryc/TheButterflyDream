@@ -9,10 +9,13 @@ public class CollectionsAction : MonoBehaviour
 
 	public bool pickUpAllowed ;
 	public Text pickUpText;
+    private Fungus.Flowchart fc;
+
     // Start is called before the first frame update
     void Start()
     {
         pickUpText.gameObject.SetActive(false);
+        fc = GameObject.Find("Flowchart").GetComponent<Fungus.Flowchart>();
 
     }
 
@@ -21,8 +24,6 @@ public class CollectionsAction : MonoBehaviour
     {
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
-
-            Fungus.Flowchart fc = GameObject.Find("Flowchart").GetComponent<Fungus.Flowchart>();
             fc.ExecuteBlock("Ring");
         }
     }
