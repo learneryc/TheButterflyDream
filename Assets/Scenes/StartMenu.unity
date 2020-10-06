@@ -2342,6 +2342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainVolumeMixer: {fileID: 24100000, guid: a9694f21b4c264fea9c309ee5491a1de, type: 2}
+  MainVolumeSlider: {fileID: 1254131337}
 --- !u!1 &1254131335
 GameObject:
   m_ObjectHideFlags: 0

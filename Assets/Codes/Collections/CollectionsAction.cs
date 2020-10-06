@@ -25,6 +25,9 @@ public class CollectionsAction : MonoBehaviour
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
             fc.ExecuteBlock("Ring");
+            /*GameObject.Find("LevelLoader").
+            GetComponent<LevelLoader>().MoveToNextLevel();
+            PersistentData.update();*/
         }
     }
 
