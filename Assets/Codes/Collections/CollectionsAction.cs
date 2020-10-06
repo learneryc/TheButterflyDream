@@ -22,11 +22,8 @@ public class CollectionsAction : MonoBehaviour
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
 
-            //GameObject.Find("Flowchart").GetComponent<Flowchart>().ExcuteBlock();
-
-            GameObject.Find("LevelLoader").
-            GetComponent<LevelLoader>().MoveToNextLevel();
-            PersistentData.update();
+            Fungus.Flowchart fc = GameObject.Find("Flowchart").GetComponent<Fungus.Flowchart>();
+            fc.ExecuteBlock("Ring");
         }
     }
 
