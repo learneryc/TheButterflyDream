@@ -11,6 +11,7 @@ public abstract class Enemy : MonoBehaviour
     protected SpriteRenderer sr;
     public Color originalColor;
     private Swordman jack;
+    private BoxCollider2D attackrange;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public abstract class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
+        attackrange = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public abstract class Enemy : MonoBehaviour
     {
         if (health <= 0) 
         {
+            attackrange.enabled = false;
             animator.SetBool("Dead", true);
             Destroy(gameObject, 0.5f);
         }
