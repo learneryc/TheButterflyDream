@@ -31,6 +31,7 @@ public class ChantMagic : MonoBehaviour
         yield return new WaitForSeconds(1f);
         for(int i =0;i< pos.Length;i++)
         {
+            //yield return new WaitForSeconds(Random.Range(0f, 0.5f));
             Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y),Quaternion.identity);
             Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y +Random.Range(1f, 3f) ),Quaternion.identity);
 
@@ -38,6 +39,7 @@ public class ChantMagic : MonoBehaviour
         yield return new WaitForSeconds(3f);
         for(int i =0;i< pos.Length;i++)
         {
+            //yield return new WaitForSeconds(Random.Range(0f, 0.5f));
             Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y + 0.5f ),Quaternion.identity);
             Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y + Random.Range(1f, 6f) ),Quaternion.identity);
 
