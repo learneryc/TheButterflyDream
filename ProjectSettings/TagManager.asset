@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Weapon
   - Laser
+  - Boss
   layers:
   - Default
   - TransparentFX

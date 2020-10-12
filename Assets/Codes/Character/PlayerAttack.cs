@@ -43,5 +43,8 @@ public class PlayerAttack : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
             other.GetComponent<Enemy>().TakeDamage(damage);
         }
+        if(other.gameObject.CompareTag("Boss")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
+            other.GetComponent<BossHealth>().TakeDamage(damage);
+        }
     }
 }
