@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: Jack, you need to find out the truth of this world.
+  storyText: You need to figure it out by yourself.
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   storyText: Oh! This ring seems familiar!
   description: 
   character: {fileID: 1134150759}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1339,7 +1339,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 60
+    width: 99
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1348,8 +1348,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 256741710}
   commandList:
-  - {fileID: 256741712}
   - {fileID: 256741704}
+  - {fileID: 256741712}
   - {fileID: 256741703}
   - {fileID: 256741702}
   - {fileID: 256741709}
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741711}
   selectedCommands:
-  - {fileID: 256741714}
+  - {fileID: 256741705}
   variables: []
   description: 
   stepPause: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 60
+    width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1489,17 +1489,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 256741701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c0367bf08d147bd80b5454de50e9d4, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  targetTextObject: {fileID: 0}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 
+  storyText: Where is here? Is that in a dream?
   description: 
-  _textObjectObsolete: {fileID: 0}
+  character: {fileID: 1134150759}
+  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &256741714
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4857,8 +4864,9 @@ MonoBehaviour:
   nameText: Jack
   nameColor: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 0
+  portraits:
+  - {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
 --- !u!4 &1134150760

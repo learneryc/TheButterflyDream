@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectionRing : CollectionsAction
+public class CollectionSunGlasses : CollectionsAction
 {
     private Fungus.Flowchart fc;
     // Start is called before the first frame update
@@ -17,8 +17,8 @@ public class CollectionRing : CollectionsAction
     {
 
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PlayerPrefs.SetString("SceneName", "LevelTwo");
-            fc.ExecuteBlock("Ring");
+            PlayerPrefs.SetString("SceneName", "LevelBoss1");
+            fc.ExecuteBlock("SunGlasses");
         	PickUp();
         }
         

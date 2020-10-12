@@ -21,7 +21,8 @@ public class PersistentData : MonoBehaviour
     }
 
     public static string getScene() {
-    	string sceneName = PlayerPrefs.GetString("SceneName", "LevelOne");
+    	//string sceneName = PlayerPrefs.GetString("SceneName", "LevelOne");
+		string sceneName = PlayerPrefs.GetString("SceneName");
     	return sceneName;
     }
 
