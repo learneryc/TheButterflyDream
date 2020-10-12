@@ -39,7 +39,7 @@ public class ChantMagic : MonoBehaviour
         for(int i =0;i< pos.Length;i++)
         {
             Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y + 0.5f ),Quaternion.identity);
-            Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y + Random.Range(1f, 5f) ),Quaternion.identity);
+            Instantiate(magic,new Vector2(pos[i].position.x + Random.Range(0f, 1f) - 0.5f,pos[i].position.y + Random.Range(1f, 6f) ),Quaternion.identity);
 
         }
         yield return new WaitForSeconds(2f);

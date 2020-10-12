@@ -9,6 +9,7 @@ public class BossHealth : MonoBehaviour
     public GameObject deathEffect;
     public SpriteRenderer[] sr;
     public Color[] originalColor;
+    public GameObject halmet;
 
     public void Start()
     {
@@ -35,7 +36,7 @@ public class BossHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			//GetComponent<Animator>().SetTrigger("Dead");
-            Destroy(gameObject,0.1f);
+            Destroy(gameObject);
 		}
 	}
 

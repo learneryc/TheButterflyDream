@@ -10,6 +10,7 @@ public class Swordman : PlayerController
 	public string trigger = "CrossFade";
 	public float transitionTime = 1f;
     public Renderer[] myRenderer;
+    public bool isInvulnerable = false;
 
     IEnumerator LoadLevel() {
 		if (trigger!="") {
@@ -244,10 +245,19 @@ public class Swordman : PlayerController
 
     }
 
-    public void beAttacked(int damage) {
+    public void beAttacked(int damage) 
+    {
+        if(isInvulnerable)return;
         curHealth-= damage;
+        isInvulnerable = true;
+        StartCoroutine(CancleInvulnerable());
         checkAlive();
         BlinkPlayer();
+    }
+    IEnumerator CancleInvulnerable()
+    {
+        yield return new WaitForSeconds(0.5f);
+        isInvulnerable = false;
     }
 
     public bool checkDropDown() {

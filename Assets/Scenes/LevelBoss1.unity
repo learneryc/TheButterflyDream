@@ -2806,6 +2806,7 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   sr: []
   originalColor: []
+  halmet: {fileID: 0}
 --- !u!114 &1290714986707871
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class BossEnrage : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        animator.GetComponent<BossHealth>().isInvulnerable = true;
+       animator.GetComponent<BossWeapon>().AfterAttack();
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
