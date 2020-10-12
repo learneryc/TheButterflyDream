@@ -12,15 +12,21 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         collider2D = GameObject.FindGameObjectWithTag("Weapon").GetComponent<PolygonCollider2D>();
-        damage = 2;
+        damage = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        AttackWithWeapon();
+        //AttackWithWeapon();
     }
-
+    //
+    public void AttackStart(){
+         collider2D.enabled = true;
+    }
+    public void AttackEnd(){
+        collider2D.enabled = false;
+    }
     void AttackWithWeapon(){
         if (Input.GetKey(KeyCode.Mouse0)){
             collider2D.enabled = true;
