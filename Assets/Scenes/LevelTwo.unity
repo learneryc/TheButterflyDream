@@ -6071,6 +6071,7 @@ GameObject:
   - component: {fileID: 1597990858}
   - component: {fileID: 1597990857}
   - component: {fileID: 1597990861}
+  - component: {fileID: 1597990862}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6172,9 +6173,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1597990854}
+  - {fileID: 1597990860}
   selectedCommands:
-  - {fileID: 1597990852}
+  - {fileID: 1597990862}
   variables: []
   description: 
   stepPause: 0
@@ -6301,6 +6302,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1597990861}
+  - {fileID: 1597990862}
   - {fileID: 1597990859}
   - {fileID: 1597990858}
   - {fileID: 1597990857}
@@ -6320,6 +6322,33 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   storyText: A sunglasses! I have saw it in somewhere!
+  description: 
+  character: {fileID: 1214333669}
+  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1597990862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  storyText: Is the sunglass that was the birthday gift Rose gave to me.
   description: 
   character: {fileID: 1214333669}
   portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
