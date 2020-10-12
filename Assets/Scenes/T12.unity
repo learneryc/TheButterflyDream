@@ -178,7 +178,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 71
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 178244816}
   selectedCommands:
-  - {fileID: 178244820}
+  - {fileID: 178244819}
   variables: []
   description: 
   stepPause: 0
@@ -258,8 +258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Jack picked up a ring. He may saw it in somewhere, but he cannot remember.
-    The butterfly take him continue to his road. . . . . .
+  storyText: "Jack picked up a ring. He may saw it in somewhere. He try to rememeber,
+    and he found that it is the ring he gave to Rose. \n\nThe butterfly take him
+    continue to the road. They trying to find out more clue......"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -274,7 +275,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &178244820
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -351,7 +352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 503
     y: 89
-    width: 60
+    width: 78
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -378,7 +379,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 310
     y: 157
-    width: 61
+    width: 101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
