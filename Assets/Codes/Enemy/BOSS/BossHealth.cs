@@ -9,10 +9,11 @@ public class BossHealth : MonoBehaviour
     public GameObject deathEffect;
     public SpriteRenderer[] sr;
     public Color[] originalColor;
-    public GameObject halmet;
+    public GameObject photo;
 
     public void Start()
     {
+        photo.SetActive(false);
         sr = GetComponentsInChildren<SpriteRenderer>();
         originalColor = new Color[sr.Length];
         for(int i =0;i<sr.Length;i++)
@@ -35,6 +36,8 @@ public class BossHealth : MonoBehaviour
 
 		if (health <= 0)
 		{
+            photo.SetActive(true);
+            AudioManager.instance.Play("Sound/bossWin", 1.0);
 			//GetComponent<Animator>().SetTrigger("Dead");
             Destroy(gameObject);
 		}
