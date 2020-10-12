@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-	public string SceneName = PlayerPrefs.GetString("SceneName");
+	public string SceneName = "";
 	public Animator transition;
 	public string trigger = "";
 	public float transitionTime = 1f;
+
+	public void Start() {
+		SceneName = PlayerPrefs.GetString("SceneName");
+	}
 
 	public void Restart() {
 		SceneName = PlayerPrefs.GetString("SceneName");
