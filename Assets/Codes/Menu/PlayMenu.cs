@@ -17,13 +17,15 @@ public class PlayMenu : MonoBehaviour
 
 	public void Start() {
 		SceneName = PersistentData.getScene();
-		if (SceneName == "LevelOne")
+		//if(SceneName == "LevelOne")
+		if (SceneName == "Begining")
 			Resume.gameObject.SetActive(false);
 	}
 
 	public void PlayNewGame() {
+		SceneName = "Begining";
 		PersistentData.update();
-		SceneName = "LevelOne";
+		//SceneName = "LevelOne";
 		PlayGame();
 	}
 

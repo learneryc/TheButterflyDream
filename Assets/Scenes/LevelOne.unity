@@ -1197,7 +1197,6 @@ GameObject:
   - component: {fileID: 256741708}
   - component: {fileID: 256741707}
   - component: {fileID: 256741706}
-  - component: {fileID: 256741704}
   - component: {fileID: 256741703}
   - component: {fileID: 256741702}
   - component: {fileID: 256741709}
@@ -1207,6 +1206,8 @@ GameObject:
   - component: {fileID: 256741715}
   - component: {fileID: 256741714}
   - component: {fileID: 256741712}
+  - component: {fileID: 256741704}
+  - component: {fileID: 256741713}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1271,7 +1272,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &256741704
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1281,12 +1282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 1
+  itemId: 11
   indentLevel: 0
-  storyText: Wake Up! Wake Up!
+  storyText: Oh! This is the ring I gave to rose! She must be in danger!
   description: 
-  character: {fileID: 857094758}
-  portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
+  character: {fileID: 1134150759}
+  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1348,7 +1349,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 256741710}
   commandList:
-  - {fileID: 256741704}
   - {fileID: 256741712}
   - {fileID: 256741703}
   - {fileID: 256741702}
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741711}
   selectedCommands:
-  - {fileID: 256741705}
+  - {fileID: 256741715}
   variables: []
   description: 
   stepPause: 0
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: Let's Move!
+  storyText: Rose is waitting for you! Let's Move!
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -1477,6 +1477,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 256741705}
+  - {fileID: 256741704}
+  - {fileID: 256741713}
   - {fileID: 256741715}
   - {fileID: 256741714}
   suppressAllAutoSelections: 0
@@ -1498,6 +1500,33 @@ MonoBehaviour:
   description: 
   character: {fileID: 1134150759}
   portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &256741713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  storyText: Maybe! Seems like we don't have so much time!
+  description: 
+  character: {fileID: 857094758}
+  portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1540,7 +1569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: Well, take it and let's move to next level.
+  storyText: Hurry up!  Take it and let's move to next place!
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -3702,6 +3731,24 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 924902720}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &924902722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8318984700524015051, guid: 546a7c1295a7d4a9f87778efa2e963d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 924902720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &924902723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924902722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f506021a6281147e6b7edd16feafb9c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &958960821
 GameObject:
   m_ObjectHideFlags: 0
@@ -4035,8 +4082,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -750.0001, y: 0}
-  m_SizeDelta: {x: 1500, y: 335}
+  m_AnchoredPosition: {x: -794.7, y: 0}
+  m_SizeDelta: {x: 1571.4961, y: 352.87408}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1037953445
 GameObject:
@@ -4170,7 +4217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1358, y: 151}
+  m_AnchoredPosition: {x: -1406, y: 157}
   m_SizeDelta: {x: 357, y: 435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045679780
