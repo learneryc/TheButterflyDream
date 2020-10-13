@@ -11,6 +11,7 @@ public class Swordman : PlayerController
 	public float transitionTime = 1f;
     public Renderer[] myRenderer;
     public bool isInvulnerable = false;
+    public bool healthReduceOne = false;
 
     IEnumerator LoadLevel() {
 		if (trigger!="") {
@@ -37,18 +38,24 @@ public class Swordman : PlayerController
         checkInput();
 
         if (checkDropDown() && !isDroppedDown) {
-            curHealth--;
+            if (!healthReduceOne) {
+                curHealth--;
+                healthReduceOne = true;
+            }
             isDroppedDown = true;
             if(curHealth <= 0)
                 StartCoroutine(LoadLevel());
             else{
-                System.Threading.Thread.Sleep(600);
+//                System.Threading.Thread.Sleep(600);
                 Vector3 pos = m_rigidbody.position;
                 pos.x = -6;
                 pos.y = 4;
                 m_rigidbody.position = pos;
             }
             
+        }
+        if (isGrounded) {
+            healthReduceOne = false;
         }
         if (m_rigidbody.position.y > 3) {
             isDroppedDown = false;
