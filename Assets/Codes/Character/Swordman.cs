@@ -88,11 +88,10 @@ public class Swordman : PlayerController
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-//                if (currentJumpCount < JumpCount)  // 0 , 1
-//                {
-//
-//                }
-                  DownJump();
+                if (currentJumpCount < JumpCount)  // 0 , 1
+                {
+                    DownJump();
+                }
             }
 
             return;
@@ -211,23 +210,21 @@ public class Swordman : PlayerController
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
 
-            if (!IsSit)
+            if (currentJumpCount < JumpCount)  // 0 , 1
             {
-                prefromJump();
+                if (!IsSit)
+                {
+                    prefromJump();
+
+                }
+                else
+                {
+                    DownJump();
+
+                }
+
 
             }
-            else
-            {
-                DownJump();
-
-            }
-
-//            if (currentJumpCount < JumpCount)  // 0 , 1
-//            {
-//
-//
-//
-//            }
 
 
         }
