@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Begining.unity
     guid: 6b8b626c456fc4709b3446bc2fade9b9
+  - enabled: 1
+    path: Assets/Scenes/T23.unity
+    guid: d8bd4ce9a913f4b528dee5c3fb34b2ac
   m_configObjects: {}

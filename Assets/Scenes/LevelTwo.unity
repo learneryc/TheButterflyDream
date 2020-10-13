@@ -5569,7 +5569,7 @@ MonoBehaviour:
   nameColor: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  - {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -6279,7 +6279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 99
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6303,11 +6303,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 704.5, y: 60}
+  scrollPos: {x: 1026.5, y: 79.50001}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -6434,7 +6434,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -103
     y: 83.5
-    width: 116
+    width: 76.25
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6466,7 +6466,7 @@ MonoBehaviour:
   storyText: A sunglasses! I have saw it in somewhere!
   description: 
   character: {fileID: 1214333669}
-  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6493,7 +6493,7 @@ MonoBehaviour:
   storyText: Is the sunglass that was the birthday gift Rose gave to me.
   description: 
   character: {fileID: 1214333669}
-  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

@@ -1287,7 +1287,7 @@ MonoBehaviour:
   storyText: Oh! This is the ring I gave to rose! She must be in danger!
   description: 
   character: {fileID: 1134150759}
-  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   storyText: Oh! This ring seems familiar!
   description: 
   character: {fileID: 1134150759}
-  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1340,7 +1340,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 99
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741711}
   selectedCommands:
-  - {fileID: 256741715}
+  - {fileID: 256741704}
   variables: []
   description: 
   stepPause: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 75
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   storyText: Where is here? Is that in a dream?
   description: 
   character: {fileID: 1134150759}
-  portrait: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4912,7 +4912,7 @@ MonoBehaviour:
   nameColor: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
+  - {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
