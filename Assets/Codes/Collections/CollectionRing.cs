@@ -17,7 +17,8 @@ public class CollectionRing : CollectionsAction
     {
 
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PlayerPrefs.SetString("SceneName", "LevelTwo");
+            //PlayerPrefs.SetString("SceneName", "LevelTwo");
+            PersistentData.update();
             fc.ExecuteBlock("Ring");
         	PickUp();
         }
