@@ -24,9 +24,18 @@ public class AudioManager : MonoBehaviour
     // Play the music in Resource folder and set the volume
     public void Play(string _audio, double volume = 0.2) {
         var audioClip = Resources.Load<AudioClip>(_audio);
-        
         audioSource.PlayOneShot(audioClip, (float)volume);
     }
+    public void DelayPlay(string _audio,float time,double volume  = 0.2) 
+    {
+        StartCoroutine(PlayWithDelay(_audio,volume,time));
+    }
+     IEnumerator PlayWithDelay(string _audio, double volume ,float time)
+     {
+         var audioClip = Resources.Load<AudioClip>(_audio);
+         yield return new WaitForSeconds(time);
+         audioSource.PlayOneShot(audioClip, (float)volume);
+     }
 
     // IEnumerator playSoundWithDelay(AudioClip clip, float volume, int delay) {
     //     yield return new WaitForSeconds(delay);

@@ -13,7 +13,10 @@ public class Bomb : MonoBehaviour
         anim = GetComponent<Animator>();
         attackArea = GetComponent<CircleCollider2D>();
         damage = 1;
+        AudioManager.instance.DelayPlay("Sound/magicFire", 0.1f);
     }
+
+
 
     // Update is called once per frame
     void Update()
