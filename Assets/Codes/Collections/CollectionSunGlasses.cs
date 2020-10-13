@@ -17,7 +17,7 @@ public class CollectionSunGlasses : CollectionsAction
     {
 
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PlayerPrefs.SetString("SceneName", "LevelBoss1");
+            PersistentData.update();
             fc.ExecuteBlock("SunGlasses");
         	PickUp();
         }

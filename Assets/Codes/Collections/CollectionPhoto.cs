@@ -17,7 +17,7 @@ public class CollectionPhoto : CollectionsAction
     {
 
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PlayerPrefs.SetString("SceneName", "LevelThree");
+            PersistentData.update();
             fc.ExecuteBlock("Photo");
         	PickUp();
         }

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PersistentData : MonoBehaviour
 {
 	private static string [] LevelNumber = {"StartMenu", "LevelOne", "LevelTwo",
+                                            "LevelTwoBoss", 
 											"LevelThree","LevelFour", "LevelFive",
 											"LevelSix","LevelSeven", "LevelEight"};
 

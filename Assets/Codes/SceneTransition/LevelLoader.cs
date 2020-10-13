@@ -17,9 +17,10 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel());
     }
 
-    public void MoveToNextLevel()
+    public void MoveToNextLevel(string nextScene)
     {
-        sceneName = "LevelTwo";
+        if (nextScene == "") return;
+        sceneName = nextScene;
         trigger = "Crossfade";
         StartCoroutine(LoadLevel());
     }
