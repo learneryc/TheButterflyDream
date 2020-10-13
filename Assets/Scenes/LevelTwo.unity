@@ -6207,7 +6207,6 @@ GameObject:
   - component: {fileID: 1597990856}
   - component: {fileID: 1597990855}
   - component: {fileID: 1597990854}
-  - component: {fileID: 1597990853}
   - component: {fileID: 1597990852}
   - component: {fileID: 1597990860}
   - component: {fileID: 1597990859}
@@ -6216,6 +6215,9 @@ GameObject:
   - component: {fileID: 1597990861}
   - component: {fileID: 1597990862}
   - component: {fileID: 1597990864}
+  - component: {fileID: 1597990865}
+  - component: {fileID: 1597990863}
+  - component: {fileID: 1597990853}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6316,10 +6318,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1597990860}
-  selectedCommands:
-  - {fileID: 1597990859}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6450,6 +6450,8 @@ MonoBehaviour:
   - {fileID: 1597990864}
   - {fileID: 1597990859}
   - {fileID: 1597990858}
+  - {fileID: 1597990863}
+  - {fileID: 1597990865}
   - {fileID: 1597990857}
   suppressAllAutoSelections: 0
 --- !u!114 &1597990861
@@ -6506,9 +6508,26 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1597990863
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  duration: 1
+  amount: {x: 1, y: 1}
+  waitUntilFinished: 0
 --- !u!114 &1597990864
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6523,6 +6542,24 @@ MonoBehaviour:
   duration: 1
   amount: {x: 1, y: 1}
   waitUntilFinished: 0
+--- !u!114 &1597990865
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.8
+  durationOLD: 0
 --- !u!1 &1651705257
 GameObject:
   m_ObjectHideFlags: 0
