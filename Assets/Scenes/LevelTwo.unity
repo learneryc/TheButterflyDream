@@ -5934,6 +5934,7 @@ MonoBehaviour:
   transitionTime: 1
   myRenderer: []
   isInvulnerable: 0
+  healthReduceOne: 0
 --- !u!50 &1541377906
 Rigidbody2D:
   serializedVersion: 4
@@ -6214,6 +6215,7 @@ GameObject:
   - component: {fileID: 1597990857}
   - component: {fileID: 1597990861}
   - component: {fileID: 1597990862}
+  - component: {fileID: 1597990864}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6279,7 +6281,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 60
+    width: 98.75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6317,7 +6319,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1597990860}
   selectedCommands:
-  - {fileID: 1597990862}
+  - {fileID: 1597990859}
   variables: []
   description: 
   stepPause: 0
@@ -6434,7 +6436,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -103
     y: 83.5
-    width: 76.25
+    width: 116.25
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6445,6 +6447,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1597990861}
   - {fileID: 1597990862}
+  - {fileID: 1597990864}
   - {fileID: 1597990859}
   - {fileID: 1597990858}
   - {fileID: 1597990857}
@@ -6503,6 +6506,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1597990864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  duration: 1
+  amount: {x: 1, y: 1}
+  waitUntilFinished: 0
 --- !u!1 &1651705257
 GameObject:
   m_ObjectHideFlags: 0
