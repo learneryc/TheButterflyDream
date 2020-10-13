@@ -108,7 +108,7 @@ public class Swordman : PlayerController
 
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
-            if (Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
             {   
                 m_Anim.Play("Attack");
                 AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
