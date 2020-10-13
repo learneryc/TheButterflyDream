@@ -1229,7 +1229,7 @@ MonoBehaviour:
   itemId: 3
   indentLevel: 0
   storyText: "Instructions: \nUse arrow keys to move; Use space keys to jump;\nUse
-    mouse left key to attack; Use E to pick up items."
+    mouse left key/Q to attack; Use E to pick up items."
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -1339,7 +1339,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 60
+    width: 99
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1378,9 +1378,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 256741711}
+  - {fileID: 256741706}
   selectedCommands:
-  - {fileID: 256741704}
+  - {fileID: 256741702}
   variables: []
   description: 
   stepPause: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 60
+    width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
