@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
@@ -10,17 +11,27 @@ public class BossHealth : MonoBehaviour
     public SpriteRenderer[] sr;
     public Color[] originalColor;
     public GameObject photo;
+    private Image healthBar;
+    public GameObject bossHealth;
+
 
     public void Start()
     {
         photo.SetActive(false);
+        bossHealth.SetActive(true);
         sr = GetComponentsInChildren<SpriteRenderer>();
         originalColor = new Color[sr.Length];
         for(int i =0;i<sr.Length;i++)
         {
             originalColor[i] = sr[i].color;
         }
+        healthBar = GameObject.Find("BossHealthBar").GetComponent<Image>();
         
+    }
+
+    public void Update()
+    {
+        healthBar.fillAmount = (float)health / 20.0f;
     }
     public void TakeDamage(int damage)
 	{
@@ -38,8 +49,10 @@ public class BossHealth : MonoBehaviour
 		{
             photo.SetActive(true);
             AudioManager.instance.Play("Sound/bossWin", 1.0);
+            bossHealth.SetActive(false);
 			//GetComponent<Animator>().SetTrigger("Dead");
             Destroy(gameObject);
+            
 		}
 	}
 
