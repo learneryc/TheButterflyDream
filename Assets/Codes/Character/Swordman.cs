@@ -12,6 +12,7 @@ public class Swordman : PlayerController
     public Renderer[] myRenderer;
     public bool isInvulnerable = false;
     public bool healthReduceOne = false;
+    public bool isRight = false;
 
     IEnumerator LoadLevel() {
 		if (trigger!="") {
@@ -27,6 +28,7 @@ public class Swordman : PlayerController
         m_CapsulleCollider  = this.transform.GetComponent<CapsuleCollider2D>();
         m_Anim = this.transform.Find("model").GetComponent<Animator>();
         m_rigidbody = this.transform.GetComponent<Rigidbody2D>();
+        isRight = true;
     }
 
 
@@ -147,7 +149,7 @@ public class Swordman : PlayerController
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-
+            isRight = true;
             if (isGrounded)
             {
 
@@ -174,15 +176,19 @@ public class Swordman : PlayerController
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
 
-            if (!Input.GetKey(KeyCode.LeftArrow))
-                Filp(false);
+            if (!m_FacingRight)
+            {
+                Filp();
+                //Filp(false);
+            }
+                
 
 
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             
-
+            isRight = false;
             if (isGrounded)
             {
 
@@ -192,21 +198,26 @@ public class Swordman : PlayerController
                     return;
 
 
-                transform.transform.Translate(Vector2.right * m_MoveX * MoveSpeed * Time.deltaTime);
+                transform.transform.Translate(Vector2.left * m_MoveX * MoveSpeed * Time.deltaTime);
 
             }
             else
             {
 
-                transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+                transform.transform.Translate(new Vector3(-m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
 
             }
 
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
 
-            if (!Input.GetKey(KeyCode.RightArrow))
-                Filp(true);
+            // if (!Input.GetKey(KeyCode.RightArrow))
+            //     Filp(true);
+            if (m_FacingRight)
+            {
+                Filp();
+                //Filp(false);
+            }
 
 
         }

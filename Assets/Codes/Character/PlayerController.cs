@@ -17,7 +17,7 @@ public abstract class PlayerController :MonoBehaviour
     protected CapsuleCollider2D m_CapsulleCollider;
     protected Animator m_Anim;
     protected Collider2D m_weapon;
-
+    protected bool m_FacingRight = true;
     [Header("[Setting]")]
     public int curHealth = 4;
     public float MoveSpeed = 6;
@@ -62,14 +62,26 @@ public abstract class PlayerController :MonoBehaviour
 
 
 
-    protected void Filp(bool bLeft)
-    {
+    // protected void Filp(bool bLeft)
+    // {
+
+    //     //transform.Rotate(0f, 180f, 0f);
+    //     transform.localScale = new Vector3(bLeft ? 1 : -1, 1, 1);
+
+    // }
 
 
-        transform.localScale = new Vector3(bLeft ? 1 : -1, 1, 1);
+	protected void Filp()
+	{
+		// Switch the way the player is labelled as facing.
+		m_FacingRight = !m_FacingRight;
 
-    }
+		Vector3 flipped = transform.localScale;
+		flipped.z *= -1f;
+		transform.localScale = flipped;
 
+		transform.Rotate(0f, 180f, 0f);
+	}
 
     protected void prefromJump()
     {

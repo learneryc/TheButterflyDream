@@ -27,7 +27,7 @@ public class BossRun : StateMachineBehaviour
        Vector2 target = new Vector2(player.position.x , rb.position.y);
        Vector2 newPos = Vector2.MoveTowards(rb.position,target,speed * Time.fixedDeltaTime);
        rb.MovePosition(newPos);
-       //Debug.Log(Vector2.Distance(player.position, rb.position ) );
+       //Debug.Log( rb.rotation  );
        if(Vector2.Distance(player.position, rb.position ) <= attackRange && bossWeapon.attackAllowed)
        {
           bossWeapon.AttackWithWeapon();
