@@ -62,16 +62,8 @@ public abstract class PlayerController :MonoBehaviour
 
 
 
-    // protected void Filp(bool bLeft)
-    // {
 
-    //     //transform.Rotate(0f, 180f, 0f);
-    //     transform.localScale = new Vector3(bLeft ? 1 : -1, 1, 1);
-
-    // }
-
-
-	protected void Filp()
+	protected void Flip()
 	{
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;

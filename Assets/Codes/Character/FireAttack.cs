@@ -17,19 +17,16 @@ public class FireAttack : MonoBehaviour
          rb.velocity = transform.right * speed;
     }
 
-
-
     // Update is called once per frame
     void Update()
     {
-        //transform.position  =  Vector2.MoveTowards(transform.position,transform,speed * Time.fixedDeltaTime);
         if(Vector2.Distance(transform.position,pos) > distance){
             Destroy(gameObject);
         }
     }
     
 
-    // damage the range enemy and player
+    // damage the range enemy and boss
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Enemy")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){

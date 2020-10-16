@@ -12,7 +12,6 @@ public class Swordman : PlayerController
     public Renderer[] myRenderer;
     public bool isInvulnerable = false;
     public bool healthReduceOne = false;
-    public bool isRight = false;
 
     IEnumerator LoadLevel() {
 		if (trigger!="") {
@@ -28,7 +27,6 @@ public class Swordman : PlayerController
         m_CapsulleCollider  = this.transform.GetComponent<CapsuleCollider2D>();
         m_Anim = this.transform.Find("model").GetComponent<Animator>();
         m_rigidbody = this.transform.GetComponent<Rigidbody2D>();
-        isRight = true;
     }
 
 
@@ -149,7 +147,6 @@ public class Swordman : PlayerController
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            isRight = true;
             if (isGrounded)
             {
 
@@ -178,8 +175,8 @@ public class Swordman : PlayerController
 
             if (!m_FacingRight)
             {
-                Filp();
-                //Filp(false);
+                Flip();
+                //Flip(false);
             }
                 
 
@@ -188,7 +185,6 @@ public class Swordman : PlayerController
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             
-            isRight = false;
             if (isGrounded)
             {
 
@@ -212,11 +208,11 @@ public class Swordman : PlayerController
                 return;
 
             // if (!Input.GetKey(KeyCode.RightArrow))
-            //     Filp(true);
+            //     Flip(true);
             if (m_FacingRight)
             {
-                Filp();
-                //Filp(false);
+                Flip();
+                //Flip(false);
             }
 
 
