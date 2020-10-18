@@ -4323,6 +4323,7 @@ MonoBehaviour:
   fireAttack: {fileID: 7528591603336462185, guid: ca7075a5a5405425dba6b04d01658bb8,
     type: 3}
   firePoint: {fileID: 1587342550}
+  fireAttackCDTime: 5
 --- !u!1 &1786398860
 GameObject:
   m_ObjectHideFlags: 0
