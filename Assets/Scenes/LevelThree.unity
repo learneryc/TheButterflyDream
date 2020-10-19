@@ -556,6 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChatName: npc1
+  player: {fileID: 317245815}
+  isFlipped: 0
 --- !u!70 &169805218
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -585,7 +587,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 12}
+  m_Offset: {x: -0.33461905, y: 11.689645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -596,7 +598,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 27}
+  m_Size: {x: 11.296201, y: 26.37929}
   m_EdgeRadius: 0
 --- !u!95 &169805220
 Animator:
@@ -18992,7 +18994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852453692}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.110001564, y: -0.28100014, z: 0.41344684}
+  m_LocalPosition: {x: -0.51, y: 0.32, z: 0.41344684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 317245815}
@@ -20656,7 +20658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: You have to wait 5 seconds for this skill to cool down after use it.
+  storyText: You have to wait a while for this skill to cool down after use it.
   description: 
   character: {fileID: 1582052413}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
