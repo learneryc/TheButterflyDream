@@ -6,7 +6,7 @@ using Fungus;
 public class NPCControl : MonoBehaviour
 {
     public string ChatName;
-    private bool canChat = false;
+    private bool canChat = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,8 @@ public class NPCControl : MonoBehaviour
     }
 
     public void OnTriggerEnter2D(Collider2D other){
-        canChat = true;
+        Say();
+        canChat = false;
     }
 
     public void OnTriggerExit2D(Collider2D other){
@@ -24,15 +25,17 @@ public class NPCControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.E)){
             Say();
         }
+        */
     }
 
     void Say(){
         if(canChat){
-            Flowchart flowChart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
-            flowChart.ExecuteBlock(ChatName);
+        Flowchart flowChart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        flowChart.ExecuteBlock(ChatName);
         }
     }
 }
