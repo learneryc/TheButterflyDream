@@ -292,6 +292,8 @@ GameObject:
   - component: {fileID: 117250553}
   - component: {fileID: 117250552}
   - component: {fileID: 117250551}
+  - component: {fileID: 117250559}
+  - component: {fileID: 117250556}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -434,6 +436,20 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &117250556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117250550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc295ba6aed8944fa3974a64f33cc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
 --- !u!114 &117250557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +496,20 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &117250559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117250550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d07cf5e706b13a4eb0ae53386c30fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
 --- !u!114 &117250560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +562,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 117250559}
   - {fileID: 117250560}
   - {fileID: 117250554}
   - {fileID: 117250555}
@@ -539,6 +570,7 @@ MonoBehaviour:
   - {fileID: 117250552}
   - {fileID: 117250558}
   - {fileID: 117250551}
+  - {fileID: 117250556}
   - {fileID: 117250557}
   suppressAllAutoSelections: 0
 --- !u!114 &117250566
@@ -568,7 +600,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 117250561}
   selectedCommands:
-  - {fileID: 117250558}
+  - {fileID: 117250556}
   variables: []
   description: 
   stepPause: 0
@@ -4308,6 +4340,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1242340794}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1750195411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750195409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f20f81c34f4d7181b4199308f9c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentEnabledOutsideFungusPriority:
+  - {fileID: 243274717}
+  - {fileID: 1750195413}
+  componentEnabledInsideFungusPriority: []
 --- !u!114 &1750195413
 MonoBehaviour:
   m_ObjectHideFlags: 0

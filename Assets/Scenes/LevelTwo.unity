@@ -6290,6 +6290,10 @@ GameObject:
   - component: {fileID: 1597990865}
   - component: {fileID: 1597990863}
   - component: {fileID: 1597990853}
+  - component: {fileID: 1597990869}
+  - component: {fileID: 1597990868}
+  - component: {fileID: 1597990867}
+  - component: {fileID: 1597990866}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6355,7 +6359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 98.75
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6364,7 +6368,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1597990853}
   commandList:
+  - {fileID: 1597990869}
   - {fileID: 1597990852}
+  - {fileID: 1597990868}
   suppressAllAutoSelections: 0
 --- !u!114 &1597990855
 MonoBehaviour:
@@ -6390,8 +6396,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1597990860}
+  selectedCommands:
+  - {fileID: 1597990866}
   variables: []
   description: 
   stepPause: 0
@@ -6508,7 +6516,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -103
     y: 83.5
-    width: 116.25
+    width: 76.25
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6517,6 +6525,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1597990867}
   - {fileID: 1597990861}
   - {fileID: 1597990862}
   - {fileID: 1597990864}
@@ -6524,6 +6533,7 @@ MonoBehaviour:
   - {fileID: 1597990858}
   - {fileID: 1597990863}
   - {fileID: 1597990865}
+  - {fileID: 1597990866}
   - {fileID: 1597990857}
   suppressAllAutoSelections: 0
 --- !u!114 &1597990861
@@ -6632,6 +6642,62 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 0.8
   durationOLD: 0
+--- !u!114 &1597990866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc295ba6aed8944fa3974a64f33cc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+--- !u!114 &1597990867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d07cf5e706b13a4eb0ae53386c30fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+--- !u!114 &1597990868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc295ba6aed8944fa3974a64f33cc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+--- !u!114 &1597990869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597990851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d07cf5e706b13a4eb0ae53386c30fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
 --- !u!1 &1651705257
 GameObject:
   m_ObjectHideFlags: 0
@@ -8608,6 +8674,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1723599243}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118574926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118574925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f20f81c34f4d7181b4199308f9c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentEnabledOutsideFungusPriority:
+  - {fileID: 2118574927}
+  componentEnabledInsideFungusPriority: []
 --- !u!114 &2118574927 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2050180692, guid: 59aed4361b339e2458cdb2733b0a8ab6,

@@ -1190,6 +1190,10 @@ GameObject:
   - component: {fileID: 256741712}
   - component: {fileID: 256741704}
   - component: {fileID: 256741713}
+  - component: {fileID: 256741717}
+  - component: {fileID: 256741716}
+  - component: {fileID: 256741719}
+  - component: {fileID: 256741718}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1322,7 +1326,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 106
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1331,10 +1335,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 256741710}
   commandList:
+  - {fileID: 256741717}
   - {fileID: 256741712}
   - {fileID: 256741703}
   - {fileID: 256741702}
   - {fileID: 256741709}
+  - {fileID: 256741716}
   suppressAllAutoSelections: 0
 --- !u!114 &256741707
 MonoBehaviour:
@@ -1349,19 +1355,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1360.0624, y: 1096.1222}
+  scrollPos: {x: 764.2921, y: 171.16582}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.25
+  zoom: 0.8199999
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 256741711}
+  selectedCommands:
+  - {fileID: 256741718}
   variables: []
   description: 
   stepPause: 0
@@ -1447,7 +1455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 78
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1456,10 +1464,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 256741719}
   - {fileID: 256741705}
   - {fileID: 256741704}
   - {fileID: 256741713}
   - {fileID: 256741715}
+  - {fileID: 256741718}
   - {fileID: 256741714}
   suppressAllAutoSelections: 0
 --- !u!114 &256741712
@@ -1562,6 +1572,62 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &256741716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc295ba6aed8944fa3974a64f33cc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+--- !u!114 &256741717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d07cf5e706b13a4eb0ae53386c30fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+--- !u!114 &256741718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc295ba6aed8944fa3974a64f33cc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+--- !u!114 &256741719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d07cf5e706b13a4eb0ae53386c30fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
 --- !u!1 &271740838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7359,6 +7425,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f929248d997d24fa80adaa46f30d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2050180693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050180691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f20f81c34f4d7181b4199308f9c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentEnabledOutsideFungusPriority:
+  - {fileID: 2050180692}
+  componentEnabledInsideFungusPriority: []
 --- !u!1 &2081364780
 GameObject:
   m_ObjectHideFlags: 0
