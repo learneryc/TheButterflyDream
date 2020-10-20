@@ -456,6 +456,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3784310061026976570, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6490385013139535653, guid: b950376efca57411d8a9e80126f0a46a,
+        type: 3}
     - target: {fileID: 3784310061529277368, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_Name
@@ -1487,7 +1493,7 @@ GameObject:
   - component: {fileID: 372291296}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18339,11 +18345,15 @@ PrefabInstance:
     - target: {fileID: 1513063930, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_root
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 317245810}
     - target: {fileID: 2050180692, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: transition
       value: 
       objectReference: {fileID: 1002925413}
+    - target: {fileID: 2050180692, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
+      propertyPath: curHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1247490469634704, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_Name
       value: Jack
@@ -21086,7 +21096,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c4ab9b18acb4edc9d7c7cf67ddbba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeartSprites: []
+  HeartSprites:
+  - {fileID: -6490385013139535653, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7042384109676019114, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7301465457164268856, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 3128560658419286586, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 4729818260483457387, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7694531943161221939, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -3830260593909529575, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -7403393265459281337, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 6960772035834626590, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7904136456745960365, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -205270267638800340, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
   HeartUI: {fileID: 1006570697}
   player: {fileID: 317245810}
 --- !u!82 &1416982244
