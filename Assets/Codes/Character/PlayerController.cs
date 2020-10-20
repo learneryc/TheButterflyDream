@@ -19,7 +19,7 @@ public abstract class PlayerController :MonoBehaviour
     protected Collider2D m_weapon;
     protected bool m_FacingRight = true;
     [Header("[Setting]")]
-    public int curHealth = 4;
+    public int curHealth = 10;
     public float MoveSpeed = 6;
     public int JumpCount = 2;
     public float jumpForce = 15f;

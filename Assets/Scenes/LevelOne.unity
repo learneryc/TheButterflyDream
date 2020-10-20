@@ -4434,12 +4434,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartSprites:
-  - {fileID: 366615594880959974, guid: 5f78568de3629411383fa9841423bda1, type: 3}
-  - {fileID: 4160753575623616581, guid: 5f78568de3629411383fa9841423bda1, type: 3}
-  - {fileID: 7685371531485235544, guid: 5f78568de3629411383fa9841423bda1, type: 3}
-  - {fileID: 8124259339964715380, guid: 5f78568de3629411383fa9841423bda1, type: 3}
-  - {fileID: 5642012044021194823, guid: 5f78568de3629411383fa9841423bda1, type: 3}
-  - {fileID: 4432793351920879750, guid: 5f78568de3629411383fa9841423bda1, type: 3}
+  - {fileID: -6490385013139535653, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7042384109676019114, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7301465457164268856, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 3128560658419286586, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 4729818260483457387, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7694531943161221939, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -3830260593909529575, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -7403393265459281337, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 6960772035834626590, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: 7904136456745960365, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
+  - {fileID: -205270267638800340, guid: b950376efca57411d8a9e80126f0a46a, type: 3}
   HeartUI: {fileID: 1343294908}
   player: {fileID: 2050180692}
 --- !u!1 &1018512591
@@ -5990,7 +5995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4432793351920879750, guid: 5f78568de3629411383fa9841423bda1,
+  m_Sprite: {fileID: -205270267638800340, guid: b950376efca57411d8a9e80126f0a46a,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -9012,6 +9017,10 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 924902721}
+    - target: {fileID: 2050180692, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
+      propertyPath: curHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1247490469634704, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_Name
       value: Jack

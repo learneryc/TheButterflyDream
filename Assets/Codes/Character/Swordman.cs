@@ -39,7 +39,7 @@ public class Swordman : PlayerController
 
         if (checkDropDown() && !isDroppedDown) {
             if (!healthReduceOne) {
-                curHealth--;
+                curHealth -= 2;
                 healthReduceOne = true;
             }
             isDroppedDown = true;
