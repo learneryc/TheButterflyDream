@@ -4343,7 +4343,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentEnabledOutsideFungusPriority:
   - {fileID: 243274717}
-  - {fileID: 0}
   componentEnabledInsideFungusPriority: []
 --- !u!1 &1786398860
 GameObject:

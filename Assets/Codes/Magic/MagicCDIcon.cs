@@ -15,7 +15,7 @@ public class MagicCDIcon : MonoBehaviour
     void Start()
     {
         magicbtn.onClick.AddListener(Onclickbtn);
-        playermagic = GameObject.Find("Jack").GetComponent<PlayerMagicAttack>();
+        //playermagic = GameObject.Find("Jack").GetComponent<PlayerMagicAttack>();
         cdtime = playermagic.fireAttackCDTime;
         EndMagic();
     }

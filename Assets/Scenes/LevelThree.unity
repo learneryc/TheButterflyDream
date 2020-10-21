@@ -1504,6 +1504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentEnabledOutsideFungusPriority:
   - {fileID: 317245810}
+  - {fileID: 2031296148}
   - {fileID: 317245811}
   componentEnabledInsideFungusPriority: []
 --- !u!114 &317245810 stripped
@@ -19310,24 +19311,6 @@ Transform:
   m_Father: {fileID: 317245815}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &890387008 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8318984700524015051, guid: 546a7c1295a7d4a9f87778efa2e963d5,
-    type: 3}
-  m_PrefabInstance: {fileID: 545201832}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &890387009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890387008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f506021a6281147e6b7edd16feafb9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &912084279
 GameObject:
   m_ObjectHideFlags: 0
@@ -23316,7 +23299,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2031296149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2031296149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23369,7 +23363,7 @@ MonoBehaviour:
   magicbtn: {fileID: 2031296148}
   mask: {fileID: 1220031732}
   cd: {fileID: 1902256557}
-  playermagic: {fileID: 0}
+  playermagic: {fileID: 317245811}
 --- !u!224 &2041095974 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3784310060046015019, guid: 9c531bdc497c54d958409a292876d08d,

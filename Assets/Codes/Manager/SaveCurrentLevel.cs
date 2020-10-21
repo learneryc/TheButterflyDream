@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scp : MonoBehaviour
+// This script is not beend used yet.
+public class SaveCurrentLevel : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetString("SceneName", "LevelOne");
+        PersistentData.update();
     }
 
     // Update is called once per frame
