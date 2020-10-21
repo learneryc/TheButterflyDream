@@ -9021,6 +9021,10 @@ PrefabInstance:
       propertyPath: curHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2050180692, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1247490469634704, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_Name
       value: Jack

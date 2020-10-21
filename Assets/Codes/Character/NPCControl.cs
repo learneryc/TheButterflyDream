@@ -16,12 +16,20 @@ public class NPCControl : MonoBehaviour
     }
 
     public void OnTriggerEnter2D(Collider2D other){
-        Say();
-        canChat = false;
+
+        if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
+        {
+            Say();
+            canChat = false;
+        }
     }
 
     public void OnTriggerExit2D(Collider2D other){
-        canChat = false;
+        if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
+        {
+            canChat = false;
+        }
+        
     }
 
     // Update is called once per frame

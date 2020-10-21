@@ -9,6 +9,8 @@ public class PlayerMagicAttack : MonoBehaviour
     public Transform firePoint;
     private bool fireAttackAllowed = true;
     public float fireAttackCDTime = 5f;
+    private MagicCDIcon icon;
+    
     //private bool xxAttackAllowed = true;
 
 
@@ -16,6 +18,7 @@ public class PlayerMagicAttack : MonoBehaviour
     void Start()
     {
         player = GetComponent<Swordman>();
+        icon = GameObject.Find("Magic1Button").GetComponent<MagicCDIcon>();
     }
 
     // Update is called once per frame
@@ -23,11 +26,15 @@ public class PlayerMagicAttack : MonoBehaviour
      {
         if (Input.GetKeyDown(KeyCode.R)&&fireAttackAllowed)
         {
+                FireBallAttack();
+                icon.StartMagic();
+        }
+     }
+     public void FireBallAttack()
+     {
                 Instantiate(fireAttack, firePoint.position, firePoint.rotation);
                 fireAttackAllowed = false;
                 StartCoroutine(FireAttackCD());
-            
-        }
      }
 
      // CD for each magic
