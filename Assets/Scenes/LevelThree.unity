@@ -1579,7 +1579,8 @@ MonoBehaviour:
   componentEnabledOutsideFungusPriority:
   - {fileID: 317245810}
   - {fileID: 2031296148}
-  - {fileID: 317245811}
+  - {fileID: 1450587006}
+  - {fileID: 2013442938}
   - {fileID: 1416982245}
   componentEnabledInsideFungusPriority: []
 --- !u!114 &317245810 stripped
@@ -21475,7 +21476,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -488.00015
     y: 18.743881
-    width: 60
+    width: 76.21951
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21595,7 +21596,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 60
+    width: 97.56098
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21637,8 +21638,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1322931524}
-  selectedCommands:
-  - {fileID: 1322931532}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
