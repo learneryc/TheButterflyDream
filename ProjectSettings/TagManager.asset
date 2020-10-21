@@ -24,7 +24,7 @@ TagManager:
   - Enemy
   - Player
   - MovingPlatform
-  - 
+  - TriggerBox
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3654179113
+    locked: 0
+  - name: Item
+    uniqueID: 3105268597
     locked: 0
