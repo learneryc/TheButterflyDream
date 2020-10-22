@@ -1581,6 +1581,7 @@ MonoBehaviour:
   - {fileID: 2031296148}
   - {fileID: 1450587006}
   - {fileID: 2013442938}
+  - {fileID: 962549369}
   - {fileID: 1416982245}
   componentEnabledInsideFungusPriority: []
 --- !u!114 &317245810 stripped
@@ -19841,6 +19842,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
+--- !u!95 &962549369 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95910407471766630, guid: 59aed4361b339e2458cdb2733b0a8ab6,
+    type: 3}
+  m_PrefabInstance: {fileID: 637845234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &965806433
 GameObject:
   m_ObjectHideFlags: 0
@@ -21649,8 +21656,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1322931541}
-  selectedCommands: []
+  - {fileID: 1322931524}
+  selectedCommands:
+  - {fileID: 1322931532}
   variables: []
   description: 
   stepPause: 0
@@ -21714,7 +21722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: You can press 'i' to enter it. It will teleport you to another gate.
+  storyText: "You can press '\u2191' to enter it. It will teleport you to another
+    gate."
   description: 
   character: {fileID: 1622056460}
   portrait: {fileID: 21300000, guid: 2ba1540e2c90d47cda83fdc8f13890e9, type: 3}
@@ -23766,7 +23775,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hit "i" to Enter
+  m_Text: "Hit \"\u2191\" to Enter"
 --- !u!222 &1779486321
 CanvasRenderer:
   m_ObjectHideFlags: 0

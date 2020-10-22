@@ -23,7 +23,7 @@ public class DoorEnter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && isDoor) {
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isDoor) {
             Vector3 pos = playerTransform.position;
             pos.x = backDoor.position.x;
             pos.y = backDoor.position.y - 0.8f;
