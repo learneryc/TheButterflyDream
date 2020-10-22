@@ -1613,7 +1613,7 @@ MonoBehaviour:
   magic3: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
   firePoint: {fileID: 852453693}
   magic1CDTime: 5
-  magic2CDTime: 15
+  magic2CDTime: 1
   magic3CDTime: 10
 --- !u!4 &317245815 stripped
 Transform:

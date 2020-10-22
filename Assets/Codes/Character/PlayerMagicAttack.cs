@@ -12,12 +12,14 @@ public class PlayerMagicAttack : MonoBehaviour
     private bool magic1Allowed = true;
     public float magic1CDTime = 5f;
     private bool magic2Allowed = true;
-    public float magic2CDTime = 15f;
+    public float magic2CDTime = 1f;
     private bool magic3Allowed = true;
     public float magic3CDTime = 10f;
     private MagicCDIcon1 icon1;
     private MagicCDIcon2 icon2;
     private MagicCDIcon3 icon3;
+    // magic2
+    private Animator anim;
     
     //private bool xxAttackAllowed = true;
 
@@ -29,6 +31,7 @@ public class PlayerMagicAttack : MonoBehaviour
         icon1 = GameObject.Find("Magic1Button").GetComponent<MagicCDIcon1>();
         icon2 = GameObject.Find("Magic2Button").GetComponent<MagicCDIcon2>();
         icon3 = GameObject.Find("Magic3Button").GetComponent<MagicCDIcon3>();
+        anim = this.transform.Find("model").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,19 +51,19 @@ public class PlayerMagicAttack : MonoBehaviour
      //Magic 1
      public void FireBallAttack()
      {
-                Instantiate(magic1, firePoint.position, firePoint.rotation);
-                magic1Allowed = false;
-                StartCoroutine(magic1CD());
+        Instantiate(magic1, firePoint.position, firePoint.rotation);
+        magic1Allowed = false;
+        StartCoroutine(magic1CD());
      }
      IEnumerator magic1CD()
      {
          yield return new WaitForSeconds(magic1CDTime);
          magic1Allowed = true;
      }
-     //Magic 2
+     //Magic 2 -> double the damage but also double the hurt 
      public void magic2Magic()
      {
-         Instantiate(magic2, transform.position, transform.rotation);
+         //anim.Play("Enrage1");
          magic2Allowed = false;
          StartCoroutine(magic2CD());
      }
@@ -73,7 +76,7 @@ public class PlayerMagicAttack : MonoBehaviour
      //Magic 3
      public void magic3Magic()
      {
-         Instantiate(magic3, firePoint.position, firePoint.rotation);
+         //Instantiate(magic3, firePoint.position, firePoint.rotation);
          magic3Allowed = false;
          StartCoroutine(magic3CD());
      }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class Swordman : PlayerController
 {
@@ -116,6 +117,11 @@ public class Swordman : PlayerController
         {
             if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
             {   
+                if (EventSystem.current.IsPointerOverGameObject ()) 
+                {
+                    return;
+                    //Debug.Log ("touch area is UI");
+                }
                 m_Anim.Play("Attack");
                 AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
             }

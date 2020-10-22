@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MagicCDIcon1 : MonoBehaviour
 {
     //FireBall
@@ -41,6 +42,7 @@ public class MagicCDIcon1 : MonoBehaviour
     }
 
     public void Onclickbtn(){
+  
         playermagic.FireBallAttack();
         StartMagic();
     }
