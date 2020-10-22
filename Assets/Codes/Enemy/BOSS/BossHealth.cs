@@ -10,14 +10,15 @@ public class BossHealth : MonoBehaviour
     public GameObject deathEffect;
     public SpriteRenderer[] sr;
     public Color[] originalColor;
-    public GameObject photo;
+    //public GameObject photo;
     private Image healthBar;
     public GameObject bossHealth;
+    public GameObject helmet;
 
 
     public void Start()
     {
-        photo.SetActive(false);
+        helmet.SetActive(false);
         bossHealth.SetActive(true);
         sr = GetComponentsInChildren<SpriteRenderer>();
         originalColor = new Color[sr.Length];
@@ -47,9 +48,11 @@ public class BossHealth : MonoBehaviour
 
 		if (health <= 0)
 		{
-            photo.SetActive(true);
+            //photo.SetActive(true);
             AudioManager.instance.Play("Sound/bossWin", 1.0);
             bossHealth.SetActive(false);
+            helmet.SetActive(true);
+            //Instantiate(helmet, transform.position, transform.rotation);
 			//GetComponent<Animator>().SetTrigger("Dead");
             Destroy(gameObject);
             

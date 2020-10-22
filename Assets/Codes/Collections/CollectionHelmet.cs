@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectionHelmet : CollectionsAction
 {
-    // Start is called before the first frame update
+    public GameObject photo;
     void Start()
     {
         base.Start();
@@ -15,6 +15,7 @@ public class CollectionHelmet : CollectionsAction
     {
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
+            photo.SetActive(true);;
         }
     }
 }
