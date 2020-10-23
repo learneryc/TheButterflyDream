@@ -15,6 +15,9 @@ public class MagicCDIcon2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(PersistentData.getMagic2() == 0){
+            magicbtn.gameObject.SetActive(false);
+        }
         magicbtn.onClick.AddListener(Onclickbtn);
         cdtime = playermagic.magic2CDTime;
         EndMagic();

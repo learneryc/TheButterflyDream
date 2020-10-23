@@ -30,6 +30,9 @@ public class PlayMenu : MonoBehaviour
 	public void PlayNewGame() {
 		SceneName = "PreLevelOne";
 		PersistentData.update();
+		PersistentData.setMagic1(0);
+		PersistentData.setMagic2(0);
+		PersistentData.setMagic3(0);
 		PlayGame();
 	}
 

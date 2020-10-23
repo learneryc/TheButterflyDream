@@ -16,6 +16,7 @@ public class CollectionHelmet : CollectionsAction
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
             photo.SetActive(true);;
+            PersistentData.setMagic1(1);
         }
     }
 }

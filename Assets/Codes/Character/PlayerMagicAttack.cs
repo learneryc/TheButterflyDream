@@ -37,16 +37,16 @@ public class PlayerMagicAttack : MonoBehaviour
     // Update is called once per frame
      void Update()
      {
-        if (Input.GetKeyDown(KeyCode.R)&&magic1Allowed)
-        {
-                FireBallAttack();
-                icon1.StartMagic();
-        }
-        if (Input.GetKeyDown(KeyCode.T)&&magic2Allowed)
-        {
-                magic2Magic();
-                icon2.StartMagic();
-        }
+        // if (Input.GetKeyDown(KeyCode.R)&&magic1Allowed)
+        // {
+        //         FireBallAttack();
+        //         icon1.StartMagic();
+        // }
+        // if (Input.GetKeyDown(KeyCode.T)&&magic2Allowed)
+        // {
+        //         magic2Magic();
+        //         icon2.StartMagic();
+        // }
      }
      //Magic 1
      public void FireBallAttack()

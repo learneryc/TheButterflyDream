@@ -13,9 +13,13 @@ public class MagicCDIcon1 : MonoBehaviour
     private float cdtime = 3f;
     private float cultime = 0f;
     public PlayerMagicAttack playermagic;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(PersistentData.getMagic1() == 0){
+            magicbtn.gameObject.SetActive(false);
+        }
         magicbtn.onClick.AddListener(Onclickbtn);
         cdtime = playermagic.magic1CDTime;
         EndMagic();
