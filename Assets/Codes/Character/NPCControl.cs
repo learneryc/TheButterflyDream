@@ -44,10 +44,15 @@ public class NPCControl : MonoBehaviour
     }
 
     void Say(){
-        if(canChat){
         Flowchart flowChart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
-        flowChart.ExecuteBlock(ChatName);
+        if(canChat){
+            flowChart.ExecuteBlock(ChatName);
         }
+        bool picked = flowChart.GetBooleanVariable("PickedBook");
+        if(picked){
+            flowChart.ExecuteBlock("BookExplain");
+        }
+        //flowChart.SetBooleanVariable("PickedBook", false);
     }
 
     public void LookAtPlayer()
