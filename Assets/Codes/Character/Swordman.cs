@@ -273,7 +273,7 @@ public class Swordman : PlayerController
     }
 
     public bool checkDropDown() {
-        if (m_rigidbody.position.y < -10) {
+        if (m_rigidbody.position.y < -20) {
             return true;
         } else {
             return false;
