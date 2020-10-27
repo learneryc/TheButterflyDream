@@ -5,31 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-	public string SceneName = "";
-	public Animator transition;
-	public string trigger = "";
-	public float transitionTime = 1f;
-
-	public void Start() {
-		SceneName = PlayerPrefs.GetString("SceneName");
+	public void LoadLevel() {
+		string scene = PlayerPrefs.GetString("SceneName");
+		GameObject.Find("LevelLoader").
+            GetComponent<LevelLoader>().MoveToNextLevel(scene);
 	}
 
-	public void Restart() {
-		SceneName = PlayerPrefs.GetString("SceneName");
-		StartCoroutine(LoadLevel());
-	}
-
-	IEnumerator LoadLevel() {
-		if (trigger!="") {
-			transition.SetTrigger(trigger);
-			yield return new WaitForSeconds(transitionTime);
-		}
-		if (SceneName != "") SceneManager.LoadScene(SceneName);
-	}
-
-	public void QuitGame() {
-		SceneName="StartMenu";
-		StartCoroutine(LoadLevel());
+	public void LoadMenu() {
+		GameObject.Find("LevelLoader").
+            GetComponent<LevelLoader>().MoveToNextLevel("StartMenu");
 	}
     
 }

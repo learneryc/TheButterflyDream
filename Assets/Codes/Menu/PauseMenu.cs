@@ -5,10 +5,10 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
 	public GameObject pauseMenuUI;
+	public float PauseButtonLength = 0.2f;
 
 	public void Pause() {
-		pauseMenuUI.SetActive(true);
-		Time.timeScale = 0f;
+		StartCoroutine(LoadAnimation(PauseButtonLength, true, 0f));
 	}
 
 	public void Resume() {
@@ -24,5 +24,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit() {
     	Application.Quit();
+    }
+
+    IEnumerator LoadAnimation(float length=0.2f, bool isActive=true, float scale=0)
+    {
+    	yield return new WaitForSeconds(length);
+    	pauseMenuUI.SetActive(isActive);
+		Time.timeScale = scale;
     }
 }

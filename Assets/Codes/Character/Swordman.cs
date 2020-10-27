@@ -6,21 +6,13 @@ using UnityEngine.EventSystems;
 
 public class Swordman : PlayerController
 {
-    public string SceneName="GameOver";
+    private string scene="GameOver";
 	public Animator transition;
 	public string trigger = "CrossFade";
 	public float transitionTime = 1f;
     public Renderer[] myRenderer;
     public bool isInvulnerable = false;
     public bool healthReduceOne = false;
-
-    IEnumerator LoadLevel() {
-		if (trigger!="") {
-			transition.SetTrigger(trigger);
-			yield return new WaitForSeconds(transitionTime);
-		}
-		if (SceneName != "") SceneManager.LoadScene(SceneName);
-	}
 
     private void Start()
     {
@@ -44,8 +36,10 @@ public class Swordman : PlayerController
                 healthReduceOne = true;
             }
             isDroppedDown = true;
-            if(curHealth <= 0)
-                StartCoroutine(LoadLevel());
+            if(curHealth <= 0) {
+                //GameObject.Find("LevelLoader").
+                //GetComponent<LevelLoader>().MoveToNextLevel(scene);
+            }
             else{
 //                System.Threading.Thread.Sleep(600);
                 Vector3 pos = m_rigidbody.position;
@@ -288,7 +282,8 @@ public class Swordman : PlayerController
 
     private void checkAlive() {
         if(curHealth <= 0)
-            StartCoroutine(LoadLevel());
+            GameObject.Find("LevelLoader").
+                GetComponent<LevelLoader>().MoveToNextLevel(scene);
     }
     
     public void BlinkPlayer()
