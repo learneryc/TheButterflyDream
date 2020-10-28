@@ -1636,8 +1636,6 @@ MonoBehaviour:
   - {fileID: 317245810}
   - {fileID: 962549369}
   - {fileID: 1416982245}
-  - {fileID: 317245811}
-  - {fileID: 317245811}
   componentEnabledInsideFungusPriority: []
 --- !u!114 &317245810 stripped
 MonoBehaviour:
