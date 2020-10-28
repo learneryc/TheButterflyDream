@@ -1634,11 +1634,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentEnabledOutsideFungusPriority:
   - {fileID: 317245810}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 962549369}
   - {fileID: 1416982245}
+  - {fileID: 317245811}
+  - {fileID: 317245811}
   componentEnabledInsideFungusPriority: []
 --- !u!114 &317245810 stripped
 MonoBehaviour:
@@ -21767,7 +21766,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1322931528}
   selectedCommands: []
   variables:
   - {fileID: 1322931561}
