@@ -12,12 +12,14 @@ public class PlayerMagicAttack : MonoBehaviour
     private bool magic1Allowed = true;
     public float magic1CDTime = 5f;
     private bool magic2Allowed = true;
-    public float magic2CDTime = 1f;
+    public float magic2CDTime = 5f;
+    public float magic2LastTime = 5f;
     private bool magic3Allowed = true;
     public float magic3CDTime = 10f;
 
     // magic2
     private Animator anim;
+    
     
     //private bool xxAttackAllowed = true;
 
@@ -51,10 +53,18 @@ public class PlayerMagicAttack : MonoBehaviour
      public void magic2Magic()
      {
          //anim.Play("Enrage1");
+         anim.SetFloat("PlayerAttackSpeed",3.0f);
          magic2Allowed = false;
+         Instantiate(magic2, firePoint.position, firePoint.rotation);
          StartCoroutine(magic2CD());
+         StartCoroutine(recoverAttackSpeed());
      }
 
+    IEnumerator recoverAttackSpeed()
+     {
+         yield return new WaitForSeconds(5f);
+         anim.SetFloat("PlayerAttackSpeed",1.0f);
+     }
     IEnumerator magic2CD()
      {
          yield return new WaitForSeconds(magic2CDTime);
