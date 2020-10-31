@@ -37,6 +37,10 @@ public class FireAttack : MonoBehaviour
             other.GetComponent<BossHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }
+        if(other.gameObject.CompareTag("Goblin")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
+            other.GetComponent<Goblin_Bass>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
         
     }
 }
