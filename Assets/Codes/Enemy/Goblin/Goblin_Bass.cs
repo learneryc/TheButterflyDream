@@ -18,6 +18,7 @@ public class Goblin_Bass : MonoBehaviour
     public float m_moveSpeed = 1;
     protected SpriteRenderer[] sr;
     protected Color[] originalColor;
+    
     //
     public enum StateAnim
     {
@@ -83,7 +84,7 @@ public class Goblin_Bass : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
        if(other.CompareTag("Player"))
         {

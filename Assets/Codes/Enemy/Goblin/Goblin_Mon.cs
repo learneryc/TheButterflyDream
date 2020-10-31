@@ -6,10 +6,12 @@ public class Goblin_Mon : Goblin_Bass
 {
     public float AtttackDis = 1f;
     public  AttackType GoblinType;
-    // styneTime 
+    // stuneTime 
     private float TimeTic = 0;
     public float  StuneTime= 0.5f;
     public float  DieTime = 1f;
+    public bool AttackAllow = true;
+    public float AttackCD = 1f;
     public enum AttackType
     {
         Sword,
@@ -52,6 +54,10 @@ public class Goblin_Mon : Goblin_Bass
          yield return new WaitForSeconds(DieTime);
          Destroy(gameObject);
      }
+
+     void AttackCoolDown(){
+         AttackAllow = true;
+     }
     //stateMachine 
     void CheckPlayerApproaching() 
     {
@@ -82,6 +88,7 @@ public class Goblin_Mon : Goblin_Bass
                 if(distance2Player >= AtttackDis){
                     m_StateAnim = StateAnim.Run;
                 }
+                if(!AttackAllow) return;
                 switch(GoblinType)
                 {
                     case AttackType.Axe:
@@ -100,6 +107,8 @@ public class Goblin_Mon : Goblin_Bass
                         break;
                     }
                 }
+                AttackAllow = false;
+                 Invoke("AttackCoolDown",AttackCD);
                 break;
             }
             case StateAnim.Hitted:

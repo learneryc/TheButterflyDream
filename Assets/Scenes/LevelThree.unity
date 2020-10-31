@@ -672,6 +672,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &127600015 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 664927672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &169805216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1060,11 @@ Transform:
   m_LocalPosition: {x: 16.18559, y: -7.141148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 127600015}
+  - {fileID: 387288817}
+  - {fileID: 731318508}
+  - {fileID: 596394763}
+  - {fileID: 373307750}
   - {fileID: 1341720077}
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -1914,6 +1925,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &366813077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 247028302}
+    m_Modifications:
+    - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Name
+      value: GreenGoblin_Spear (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6363616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
 --- !u!1 &372291292
 GameObject:
   m_ObjectHideFlags: 0
@@ -21880,6 +21948,12 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!4 &373307750 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1786153377}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &379903963
 GameObject:
   m_ObjectHideFlags: 0
@@ -21961,6 +22035,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &387288817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 566775082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &409548865
 GameObject:
   m_ObjectHideFlags: 0
@@ -22581,7 +22661,7 @@ Transform:
   - {fileID: 409548866}
   - {fileID: 1145129747}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &545201832
 PrefabInstance:
@@ -22633,7 +22713,7 @@ PrefabInstance:
     - target: {fileID: 8318984700524015049, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8318984700524015049, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
@@ -22831,6 +22911,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &566775082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 247028302}
+    m_Modifications:
+    - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Name
+      value: GreenGoblin_Spear (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6788521
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
 --- !u!1 &590975769
 GameObject:
   m_ObjectHideFlags: 0
@@ -22961,6 +23098,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590975769}
   m_CullTransparentMesh: 0
+--- !u!4 &596394763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1695401096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &617771035
 GameObject:
   m_ObjectHideFlags: 0
@@ -23043,7 +23186,7 @@ Transform:
   - {fileID: 667062722}
   - {fileID: 1244432988}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618669795
 GameObject:
@@ -23189,7 +23332,7 @@ RectTransform:
   - {fileID: 1779486318}
   - {fileID: 280107700}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23253,7 +23396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4186536141794408, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4186536141794408, guid: 59aed4361b339e2458cdb2733b0a8ab6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23359,8 +23502,65 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &664927672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 247028302}
+    m_Modifications:
+    - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Name
+      value: GreenGoblin_Spear
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69885206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
 --- !u!1 &667062721
 GameObject:
   m_ObjectHideFlags: 0
@@ -23532,10 +23732,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
-    - target: {fileID: 1341720082, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
-      propertyPath: m_moveSpeed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1322351936284736, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Axe
@@ -23546,7 +23742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23570,7 +23766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23617,6 +23813,12 @@ Transform:
   m_Father: {fileID: 1876669844}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.444}
+--- !u!4 &731318508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 366813077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732300847
 GameObject:
   m_ObjectHideFlags: 0
@@ -24065,7 +24267,7 @@ PrefabInstance:
     - target: {fileID: 4631093838335277122, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4631093838335277122, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
@@ -24766,7 +24968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076126435
 GameObject:
@@ -27949,7 +28151,7 @@ Transform:
   m_Children:
   - {fileID: 372291293}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582052412
 GameObject:
@@ -28435,6 +28637,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1695401096
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 247028302}
+    m_Modifications:
+    - target: {fileID: 1950393020645594, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Name
+      value: GreenGoblin_Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.75916004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
 --- !u!1 &1715126671
 GameObject:
   m_ObjectHideFlags: 0
@@ -28935,6 +29194,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1786153377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 247028302}
+    m_Modifications:
+    - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Name
+      value: GreenGoblin_Spear
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
 --- !u!1 &1788265721
 GameObject:
   m_ObjectHideFlags: 0
@@ -29789,7 +30105,7 @@ PrefabInstance:
     - target: {fileID: 72370853391612719, guid: 9b38204e14f714da19e2d4a78affc0ee,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 72370853391612719, guid: 9b38204e14f714da19e2d4a78affc0ee,
         type: 3}
