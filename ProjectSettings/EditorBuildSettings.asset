@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PreLevelOne.unity
     guid: 6b8b626c456fc4709b3446bc2fade9b9
   - enabled: 1
+    path: Assets/Scenes/PreLevelOne2.unity
+    guid: 6efdb4c4ac58548929bbc64b702d1e9a
+  - enabled: 1
     path: Assets/Scenes/PostLevelTwo.unity
     guid: d8bd4ce9a913f4b528dee5c3fb34b2ac
   - enabled: 1

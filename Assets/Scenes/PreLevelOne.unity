@@ -553,9 +553,6 @@ GameObject:
   - component: {fileID: 814717865}
   - component: {fileID: 814717864}
   - component: {fileID: 814717861}
-  - component: {fileID: 814717860}
-  - component: {fileID: 814717859}
-  - component: {fileID: 814717858}
   - component: {fileID: 814717862}
   m_Layer: 0
   m_Name: Flowchart
@@ -564,87 +561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &814717858
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814717857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  storyText: I have to leave. The butterfly will lead you to find me.
-  description: 
-  character: {fileID: 1322541584}
-  portrait: {fileID: 21300000, guid: 128f5b54f7b3646d79ece248792423dd, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &814717859
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814717857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  storyText: Rose! Wait!
-  description: 
-  character: {fileID: 1712761945}
-  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &814717860
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814717857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  storyText: "No, it\u2019s impossible. You died in the accident last month"
-  description: 
-  character: {fileID: 1712761945}
-  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &814717861
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -688,7 +604,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: LevelOne
+    stringVal: PreLevelOne2
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &814717864
@@ -749,7 +665,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 71
+    width: 78
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -760,9 +676,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 814717864}
   - {fileID: 814717861}
-  - {fileID: 814717860}
-  - {fileID: 814717858}
-  - {fileID: 814717859}
   - {fileID: 814717862}
   suppressAllAutoSelections: 0
 --- !u!114 &814717867
@@ -778,11 +691,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 591.5, y: 97}
+  scrollPos: {x: 3132.4998, y: 613}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -792,7 +705,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 814717866}
   selectedCommands:
-  - {fileID: 814717859}
+  - {fileID: 814717862}
   variables: []
   description: 
   stepPause: 0
