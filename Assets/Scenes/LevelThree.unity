@@ -23389,11 +23389,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_Direction
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0310394
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.057879478
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1802563
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0310394
       objectReference: {fileID: 0}
     - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_Name
@@ -23629,13 +23649,29 @@ PrefabInstance:
       propertyPath: m_Direction
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.012901306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.17328626
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0272926
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0272926
+      objectReference: {fileID: 0}
     - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1322351936284736, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_Name
@@ -27958,7 +27994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1003727820884142, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_Name
@@ -28630,13 +28666,29 @@ PrefabInstance:
       propertyPath: m_Direction
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0323297
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.021615684
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16747373
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0323297
+      objectReference: {fileID: 0}
     - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1950393020645594, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_Name
