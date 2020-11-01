@@ -23385,7 +23385,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_GravityScale
@@ -23667,7 +23667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_GravityScale
@@ -27990,7 +27990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_GravityScale
@@ -28684,7 +28684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_GravityScale
