@@ -2,40 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goblin_Mon : Goblin_Bass
+public class Goblin_Potion : Goblin_Bass
 {
-    public float AtttackDis = 1f;
-    public  AttackType GoblinType;
-    // stuneTime 
+    //public  CircleCollider2D m_touchSensor;
+    public int m_damage =1; 
     private float TimeTic = 0;
-    public float  StuneTime= 0.5f;
-    public float  DieTime = 1f;
+    public float  StuneTime= 0.2f;
+    public float  DieTime = 0.5f;
     public bool AttackAllow = true;
     public float AttackCD = 1f;
-    protected Goblin_Weapon weapon;
-    public enum AttackType
-    {
-        Sword,
-        Spear,
-        Axe
-    }
+    public float AtttackDis = 2f;
     // Start is called before the first frame update
-     void Start()
+    void Start()
     {
         base.Start();
-        weapon = GetComponentsInChildren<Goblin_Weapon>()[0];
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if(Current_Tartget == null)
-        // {
-        //     m_Anim.Play("Idle");
-        //     return;
-        // }
         CheckPlayerApproaching();
-    }   
+    }
+
+    public GameObject FireBottle;
+    public Transform RotateSocket;
+    public GameObject WeaponSocket;
+    protected void CreatePotion()
+    {
+
+            GameObject tmpobj = Instantiate(FireBottle, WeaponSocket.transform.position, WeaponSocket.transform.localRotation);
+
+            if (bLeft)
+            {
+                tmpobj.transform.right = -RotateSocket.transform.right;
+            }
+            else
+            {
+                tmpobj.transform.right = RotateSocket.transform.right;
+            }
+
+
+
+            Vector3 pos1 = Current_Tartget.transform.position - this.transform.position;
+       
+            float tmpangle = Vector3.Angle(this.transform.up, pos1);
+
+           
+            tmpobj.GetComponent<PotionScript>().Fire(Current_Tartget.transform.position,tmpangle,m_damage);
+        
+
+        // tmpobj.transform.right = dir;
+
+    }
+
      public override  void  TakeDamage(int damage) 
     {
         FlashColor(0.2f);
@@ -50,33 +70,77 @@ public class Goblin_Mon : Goblin_Bass
         m_StateAnim = StateAnim.Hitted;
     }
 
-    
-     IEnumerator DieState()
+    IEnumerator DieState()
      {
          yield return new WaitForSeconds(DieTime);
          Destroy(gameObject);
      }
 
-     void AttackCoolDown(){
+
+    
+    void AttackCoolDown(){
          AttackAllow = true;
      }
 
+    public bool b_DefaultAttack_Anim = false;
 
-     // attack 
-    public void StartAttack(){
-        weapon.Attack();
+    public  void DefaultAttack_Anim_1_Enter()
+    {
+        // Is_OnceAttack = true;
+
+      //Debug.Log("Attack1공격");
+        b_DefaultAttack_Anim = true;
+        CreatePotion();
+        RotateSocketFuc(RotateSocket.transform.position, Current_Tartget.transform.position, 45);
     }
-    public void AfterAttack(){
-        weapon.AfterAttack();
+    public void RotateSocketFuc(Vector3 currentPos, Vector3 targetPos, float initialAngle)
+    {
+        if (RotateSocket == null)
+            return;
+
+        Vector3 v = targetPos - currentPos;
+
+        float Angle = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
+
+
+
+
+        if (float.IsNaN(Angle))
+        {
+
+        }
+        else
+        {
+
+
+            if (bLeft)
+            {
+                RotateSocket.transform.localRotation = Quaternion.AngleAxis(Angle - 180, Vector3.forward);
+            }
+            else
+            {
+                RotateSocket.transform.localRotation = Quaternion.AngleAxis(-Angle, Vector3.forward);
+            }
+
+
+
+        }
+
+
+    }
+    public  void DefaultAttack_Anim_1_Exit()
+    {
+        b_DefaultAttack_Anim = false;
     }
 
-    //stateMachine 
+    // State Machine
     void CheckPlayerApproaching() 
     {   
-        if(Current_Tartget == null){
-                    m_Anim.Play("Idle");
-                    return;
-                }
+        if(Current_Tartget == null)
+        {
+            m_Anim.Play("Idle");
+            return;
+        }
         float distance2Player = Vector2.Distance(Current_Tartget.transform.position, transform.position);
         MoveDir = Vector2.zero;
         switch (m_StateAnim)
@@ -105,26 +169,14 @@ public class Goblin_Mon : Goblin_Bass
                     m_StateAnim = StateAnim.Run;
                 }
                 if(!AttackAllow) return;
-                switch(GoblinType)
+                m_Anim.Play("Attack_FireBottle");
+                if (!b_DefaultAttack_Anim)
                 {
-                    case AttackType.Axe:
-                    {
-                        m_Anim.Play("Attack_Axe");
-                        break;
-                    }
-                    case AttackType.Sword:
-                    {
-                        m_Anim.Play("Attack_Sword");
-                        break;
-                    }
-                    case AttackType.Spear:
-                    {
-                        m_Anim.Play("Attack_Spear");
-                        break;
-                    }
+                Filp();
                 }
+                DefaultAttack_Anim_1_Enter();
                 AttackAllow = false;
-                 Invoke("AttackCoolDown",AttackCD);
+                Invoke("AttackCoolDown",AttackCD);
                 break;
             }
             case StateAnim.Hitted:
@@ -154,8 +206,6 @@ public class Goblin_Mon : Goblin_Bass
                     return;
                 }
                 m_Anim.Play("Die");
-                StartCoroutine(DieState());
-                
                  break;
             }
         }

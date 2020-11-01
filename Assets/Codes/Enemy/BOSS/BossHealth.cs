@@ -53,7 +53,7 @@ public class BossHealth : MonoBehaviour
             bossHealth.SetActive(false);
             helmet.SetActive(true);
             //Instantiate(helmet, transform.position, transform.rotation);
-			//GetComponent<Animator>().SetTrigger("Dead");
+			// GetComponent<Animator>().SetTrigger("Dead");
             Destroy(gameObject);
             
 		}

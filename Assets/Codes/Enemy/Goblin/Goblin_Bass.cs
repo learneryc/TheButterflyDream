@@ -7,9 +7,7 @@ public class Goblin_Bass : MonoBehaviour
     // Start is called before the first frame update
     //
     protected Animator m_Anim;
-    private BoxCollider2D m_touchSensor;
     private Rigidbody2D m_rig;
-     protected Goblin_Weapon weapon;
 
     //
     public GameObject Current_Tartget;
@@ -33,9 +31,7 @@ public class Goblin_Bass : MonoBehaviour
     public void Start()
     {
         m_Anim =GetComponent<Animator>();
-        m_touchSensor = GetComponent<BoxCollider2D>();
         m_rig = GetComponent<Rigidbody2D>();
-        weapon = GetComponentsInChildren<Goblin_Weapon>()[0];
         sr = GetComponentsInChildren<SpriteRenderer>();
         originalColor = new Color[sr.Length];
         for(int i =0;i<sr.Length;i++)
@@ -43,6 +39,7 @@ public class Goblin_Bass : MonoBehaviour
             originalColor[i] = sr[i].color;
         }
     }
+
 
     // Update is called once per frame
     void Update()
@@ -84,20 +81,7 @@ public class Goblin_Bass : MonoBehaviour
 
     }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-       if(other.CompareTag("Player"))
-        {
-            Current_Tartget = other.gameObject;
-        }
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-       if(other.CompareTag("Player"))
-        {
-            Current_Tartget = null;
-        }
-    }
+    
     // be hit
      public virtual void TakeDamage(int damage) 
     {
@@ -122,12 +106,6 @@ public class Goblin_Bass : MonoBehaviour
         }
     }
 
-    // attack 
-    public void StartAttack(){
-        weapon.Attack();
-    }
-    public void AfterAttack(){
-        weapon.AfterAttack();
-    }
+   
 
 }
