@@ -121,7 +121,7 @@ public class PotionScript : MonoBehaviour
 
   
 
-            if (false)//( other.CompareTag("Player") )
+            if ( other.CompareTag("Player") )
             {
 
                 m_bUpdateCheck = false;
