@@ -1250,6 +1250,7 @@ GameObject:
   - component: {fileID: 256741728}
   - component: {fileID: 256741727}
   - component: {fileID: 256741729}
+  - component: {fileID: 256741730}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1393,6 +1394,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 256741729}
   - {fileID: 256741717}
+  - {fileID: 256741730}
   - {fileID: 256741712}
   - {fileID: 256741703}
   - {fileID: 256741702}
@@ -1435,7 +1437,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741706}
   selectedCommands:
-  - {fileID: 256741729}
+  - {fileID: 256741730}
   variables: []
   description: 
   stepPause: 0
@@ -1933,6 +1935,33 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
+--- !u!114 &256741730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256741701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  storyText: Rose is gone. You are failed to catched her.
+  description: 
+  character: {fileID: 857094758}
+  portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &272778324
 GameObject:
   m_ObjectHideFlags: 0

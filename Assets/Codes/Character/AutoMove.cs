@@ -5,9 +5,9 @@ using Fungus;
 
 public class AutoMove : MonoBehaviour
 {
-    public float speed = 2; //[1] 物体移动速度
-    public Transform []target;  // [2] 目标
-    public float delta = 0.2f; // 误差值
+    public float speed = 2; 
+    public Transform []target;  
+    public float delta = 0.2f; 
     public string targetName;
     private static int i = 0;
     //protected Animator m_Anim;
@@ -17,11 +17,10 @@ public class AutoMove : MonoBehaviour
     }
 
     void moveTo(){
-        // [3] 重新初始化目标点
         target [i].position = new Vector3 (target [i].position.x, target [i].position.y, 0);
 
         if(target [i].position.x > 6){
-        // [4] 让物体朝向目标点 
+        
         transform.LookAt (target [i]);
 
         if(targetName.Equals("Rose")){
@@ -29,11 +28,9 @@ public class AutoMove : MonoBehaviour
             flowChart.ExecuteBlock("Wait");
         }
 
-        // [5] 物体向前移动
         transform.Translate (Vector3.forward * Time.deltaTime * speed);
         transform.Rotate(0f, -90f, 0f);
 
-        // [6] 判断物体是否到达目标点
         if (transform.position.x > target[i].position.x - delta 
             && transform.position.x < target[i].position.x + delta
             )
