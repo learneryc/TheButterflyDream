@@ -22,6 +22,10 @@ public class Goblin_Potion : Goblin_Bass
     // Update is called once per frame
     void Update()
     {
+        if(Current_Tartget == null)
+        {
+            return;
+        }
         CheckPlayerApproaching();
     }
 

@@ -661,7 +661,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6f6f58ffe0d8bde4b8082055a3f2e0dd, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -684,7 +684,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -703,9 +703,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.021615671, y: 0.12969358}
-  m_Size: {x: 0.9567692, y: 0.740616}
-  m_Direction: 1
+  m_Offset: {x: -0.021615684, y: 0.16747373}
+  m_Size: {x: 1.0323297, y: 1.0323297}
+  m_Direction: 0
 --- !u!114 &596394767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_StateAnim: 0
   AtttackDis: 1
   GoblinType: 0
-  StuneTime: 0.3
+  StuneTime: 0.2
   DieTime: 0.5
   AttackAllow: 1
   AttackCD: 2

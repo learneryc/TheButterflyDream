@@ -29,11 +29,11 @@ public class Goblin_Mon : Goblin_Bass
     // Update is called once per frame
     void Update()
     {
-        // if(Current_Tartget == null)
-        // {
-        //     m_Anim.Play("Idle");
-        //     return;
-        // }
+        if(Current_Tartget == null)
+        {
+            
+            return;
+        }
         CheckPlayerApproaching();
     }   
      public override  void  TakeDamage(int damage) 
