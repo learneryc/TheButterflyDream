@@ -30,6 +30,7 @@ public class Swordman : PlayerController
 
         checkInput();
 
+
         if (checkDropDown() && !isDroppedDown) {
             if (!healthReduceOne) {
                 curHealth -= 2;
@@ -110,14 +111,20 @@ public class Swordman : PlayerController
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
-            {   
-                if (EventSystem.current.IsPointerOverGameObject ()) 
+            {
+                Vector3 mousePosition = Input.mousePosition;
+                float mPosX = mousePosition.x;
+                float mPosY = mousePosition.y;
+                if (!EventSystem.current.IsPointerOverGameObject ())
                 {
+                    m_Anim.Play("Attack");
+                    AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
+//                    return;
+//                    //Debug.Log ("touch area is UI");
+                } else if (!(mPosX >= 400f && mPosX <= 863f && mPosY <= 140f && mPosY >= 60f)) {
                     return;
-                    //Debug.Log ("touch area is UI");
                 }
-                m_Anim.Play("Attack");
-                AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
+
             }
             else
             {
@@ -144,20 +151,72 @@ public class Swordman : PlayerController
 
         }
 
+        if (Input.GetKey(KeyCode.Mouse0)) {
+            Vector3 mousePosition = Input.mousePosition;
+            float mPosX = mousePosition.x;
+            float mPosY = mousePosition.y;
 
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            if (isGrounded)
-            {
+            if (mPosX >= 663f && mPosX <= 863f && mPosY <= 140f && mPosY >= 60f) {
+                m_MoveX = Input.GetAxis("Fire1");
+                m_Anim.Play("Run");
+                if (isGrounded)
+                {
+                    transform.transform.Translate(Vector2.right * m_MoveX * MoveSpeed * Time.deltaTime);
 
+                }
+                else
+                {
+                    transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
 
+                }
 
                 if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                     return;
 
-                transform.transform.Translate(Vector2.right* m_MoveX * MoveSpeed * Time.deltaTime);
+                if (!m_FacingRight)
+                {
+                    Flip();
+                    //Flip(false);
+                }
+            } else if (mPosX >= 400f && mPosX < 663f && mPosY <= 140f && mPosY >= 60f) {
+                m_MoveX = Input.GetAxis("Fire1");
+                m_Anim.Play("Run");
+                if (isGrounded)
+                {
+
+                    transform.transform.Translate(Vector2.left * -m_MoveX * MoveSpeed * Time.deltaTime);
+
+                }
+                else
+                {
+
+                    transform.transform.Translate(new Vector3(-m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+
+                }
+
+                if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                    return;
+
+                // if (!Input.GetKey(KeyCode.RightArrow))
+                //     Flip(true);
+                if (m_FacingRight)
+                {
+                    Flip();
+                    //Flip(false);
+                }
+            }
 
 
+
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+
+            if (isGrounded)
+            {
+
+                transform.transform.Translate(Vector2.right * m_MoveX * MoveSpeed * Time.deltaTime);
 
             }
             else
@@ -167,9 +226,6 @@ public class Swordman : PlayerController
 
             }
 
-
-
-
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
 
@@ -178,21 +234,15 @@ public class Swordman : PlayerController
                 Flip();
                 //Flip(false);
             }
-                
-
 
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            
+
             if (isGrounded)
             {
-
-
-
-                if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                    return;
-
+//                if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+//                    return;
 
                 transform.transform.Translate(Vector2.left * m_MoveX * MoveSpeed * Time.deltaTime);
 
