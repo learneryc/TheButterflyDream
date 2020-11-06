@@ -298,6 +298,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Mass
+      value: 0.8371057
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1950393020645594, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Sword (1)
@@ -345,6 +365,16 @@ PrefabInstance:
     - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
@@ -635,6 +665,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 637602135, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
+      propertyPath: m_Mass
+      value: 40.662483
+      objectReference: {fileID: 0}
+    - target: {fileID: 637602136, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1724189530, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -645,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4049532101181652, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 114.734406
+      value: 114.11
       objectReference: {fileID: 0}
     - target: {fileID: 4049532101181652, guid: c33db19546bdfea469e3ff5a5d258faa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -687,6 +737,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95365903431829052, guid: c33db19546bdfea469e3ff5a5d258faa,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95365903431829052, guid: c33db19546bdfea469e3ff5a5d258faa,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 556188167626693672, guid: c33db19546bdfea469e3ff5a5d258faa,
         type: 3}
       propertyPath: m_Enabled
@@ -702,6 +762,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1456673746, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Mass
+      value: 0.40988588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1242604480618128, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Bow (5)
@@ -749,6 +829,16 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -1497,7 +1587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &254671269
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1775,6 +1865,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Mass
+      value: 0.83501446
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Spear (1)
@@ -1822,6 +1932,16 @@ PrefabInstance:
     - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
@@ -23409,6 +23529,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Mass
+      value: 0.8289571
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1322351936284736, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Axe (2)
@@ -23456,6 +23596,16 @@ PrefabInstance:
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -23631,11 +23781,6 @@ PrefabInstance:
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
-        type: 3}
-      propertyPath: m_CullingMode
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -24616,6 +24761,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1456673746, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Mass
+      value: 0.40988588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1242604480618128, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Bow (4)
@@ -24663,6 +24828,16 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2204099318924440381, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
@@ -24796,6 +24971,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Mass
+      value: 0.8371057
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1950393020645594, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Sword (2)
@@ -24843,6 +25038,16 @@ PrefabInstance:
     - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
@@ -25492,6 +25697,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Mass
+      value: 0.83501446
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307753, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 373307754, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1462887364102252, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Spear (2)
@@ -25539,6 +25764,16 @@ PrefabInstance:
     - target: {fileID: 4200271786439836, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
@@ -25673,6 +25908,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1456673746, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Mass
+      value: 0.40988588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1242604480618128, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Bow (2)
@@ -25720,6 +25975,16 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -26995,7 +27260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1322931513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29209,7 +29474,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06564331, y: 1.3675705}
@@ -29623,6 +29888,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Mass
+      value: 0.8289571
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1322351936284736, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Axe (3)
@@ -29670,6 +29955,16 @@ PrefabInstance:
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -29994,6 +30289,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1456673746, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Mass
+      value: 0.40988588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1242604480618128, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Bow (1)
@@ -30041,6 +30356,16 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -31318,6 +31643,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1456673746, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Mass
+      value: 0.40988588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456673747, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1242604480618128, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Bow (3)
@@ -31365,6 +31710,16 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -31555,13 +31910,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 1341720079, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Mass
+      value: 0.8289571
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341720081, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1322351936284736, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Axe (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.71846
+      value: 112.4
       objectReference: {fileID: 0}
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31603,6 +31978,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
 --- !u!1001 &1959325875
@@ -31612,6 +31997,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 247028302}
     m_Modifications:
+    - target: {fileID: 596394764, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Mass
+      value: 0.8371057
+      objectReference: {fileID: 0}
+    - target: {fileID: 596394766, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1950393020645594, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_Name
       value: GreenGoblin_Sword (3)
@@ -31659,6 +32064,16 @@ PrefabInstance:
     - target: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
