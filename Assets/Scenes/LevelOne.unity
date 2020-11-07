@@ -1383,7 +1383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 69
-    width: 60
+    width: 97.56098
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1392,8 +1392,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 256741710}
   commandList:
-  - {fileID: 256741729}
   - {fileID: 256741717}
+  - {fileID: 256741729}
   - {fileID: 256741730}
   - {fileID: 256741712}
   - {fileID: 256741703}
@@ -1437,7 +1437,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 256741706}
   selectedCommands:
-  - {fileID: 256741730}
+  - {fileID: 256741729}
   variables: []
   description: 
   stepPause: 0
@@ -1523,7 +1523,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 60
+    width: 74.39024
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
