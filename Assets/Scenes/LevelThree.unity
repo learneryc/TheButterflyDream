@@ -2572,11 +2572,14 @@ MonoBehaviour:
   magic1: {fileID: 7528591603336462185, guid: ca7075a5a5405425dba6b04d01658bb8, type: 3}
   magic2: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
   magic3: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
+  healhealth: {fileID: 4985483757072088910, guid: 05a29fbceffba447b88128b925505729,
+    type: 3}
   firePoint: {fileID: 852453693}
   magic1CDTime: 5
   magic2CDTime: 20
   magic2LastTime: 5
   magic3CDTime: 10
+  healHealthLastTime: 1.5
 --- !u!4 &317245815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4186536141794408, guid: 59aed4361b339e2458cdb2733b0a8ab6,

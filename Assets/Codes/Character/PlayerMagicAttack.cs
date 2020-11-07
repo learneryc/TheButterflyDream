@@ -7,6 +7,7 @@ public class PlayerMagicAttack : MonoBehaviour
     public GameObject magic1;
     public GameObject magic2;
     public GameObject magic3;
+    public GameObject healhealth;
     private Swordman player;
     public Transform firePoint;
     private bool magic1Allowed = true;
@@ -16,6 +17,7 @@ public class PlayerMagicAttack : MonoBehaviour
     public float magic2LastTime = 5f;
     private bool magic3Allowed = true;
     public float magic3CDTime = 10f;
+    public float healHealthLastTime = 1.5f;
 
     // magic2
     private Animator anim;
@@ -34,6 +36,9 @@ public class PlayerMagicAttack : MonoBehaviour
     // Update is called once per frame
      void Update()
      {
+         if(Input.GetKeyDown(KeyCode.M)){
+             getHeal();
+         }
      }
      //Magic 1
      public void FireBallAttack()
@@ -85,6 +90,12 @@ public class PlayerMagicAttack : MonoBehaviour
      {
          yield return new WaitForSeconds(magic3CDTime);
          magic3Allowed = true;
+     }
+
+     public void getHeal()
+     {
+         Instantiate(healhealth);
+         player.curHealth  = player.curHealth + 1;
      }
 
 }
