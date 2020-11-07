@@ -28,7 +28,6 @@ public class MeetCharacter : MonoBehaviour
         PersistentData.update();
         Flowchart flowChart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
         flowChart.ExecuteBlock(ChatName);
-
     }
 
 
