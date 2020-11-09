@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectionHelmet : CollectionsAction
 {
     public GameObject photo;
+    public GameObject playerhelmet; 
     void Start()
     {
         base.Start();
@@ -15,7 +16,8 @@ public class CollectionHelmet : CollectionsAction
     {
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
         	PickUp();
-            photo.SetActive(true);;
+            playerhelmet.SetActive(true);
+            photo.SetActive(true);
             PersistentData.setMagic1(1);
         }
     }
