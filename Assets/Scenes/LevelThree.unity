@@ -27069,7 +27069,6 @@ GameObject:
   - component: {fileID: 1322931582}
   - component: {fileID: 1322931581}
   - component: {fileID: 1322931580}
-  - component: {fileID: 1322931584}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -27493,10 +27492,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1322931559}
-  selectedCommands:
-  - {fileID: 1322931580}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1322931561}
   description: 
@@ -28504,7 +28501,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1322931561
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -29061,18 +29058,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1322931584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322931512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b4cc2fa8e71b492ba4674a0e606f732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1328736669
 GameObject:
   m_ObjectHideFlags: 0
