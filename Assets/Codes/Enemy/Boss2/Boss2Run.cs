@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss2Run : StateMachineBehaviour
 {
@@ -8,22 +9,30 @@ public class Boss2Run : StateMachineBehaviour
     Transform player;
     Rigidbody2D rb;
     Boss boss;
+    Boss2Magic bossmagic;
     public float attackRange = 1.7f;
     private float cntTime = 0;
     public  float skill1CD = 20f;
+
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
+        bossmagic =  animator.GetComponent<Boss2Magic>();
+        bossmagic.bossSkill1CD = skill1CD;
+        bossmagic.cntTime = cntTime;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        boss.LookAtPlayer();
-        cntTime += Time.fixedDeltaTime;
+        cntTime += Time.deltaTime;
+        bossmagic.cntTime = cntTime;
+        
        Vector2 target = new Vector2(player.position.x , rb.position.y);
        Vector2 newPos = Vector2.MoveTowards(rb.position,target,speed * Time.fixedDeltaTime);
        rb.MovePosition(newPos);
