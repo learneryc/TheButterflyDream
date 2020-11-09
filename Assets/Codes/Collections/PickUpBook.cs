@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Fungus;
 
 public class PickUpBook : MonoBehaviour
@@ -41,6 +42,7 @@ public class PickUpBook : MonoBehaviour
     }
 
     void PickUp(){
+        PersistentData.setMagic2(1);
         AudioManager.instance.Play("Sound/pickup");
     	Destroy(gameObject);
     }
