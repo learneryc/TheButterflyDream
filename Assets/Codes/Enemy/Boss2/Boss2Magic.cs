@@ -6,6 +6,7 @@ public class Boss2Magic : MonoBehaviour
 {
     public GameObject goblin1;
     public GameObject goblin2;
+    public GameObject goblin3;
     public GameObject shieldAttack;
 
     public float cntTime = 0f ;
@@ -28,11 +29,26 @@ public class Boss2Magic : MonoBehaviour
         barPos.position =new Vector2( magicStartPos.position.x + (magicEndPos.position.x - magicStartPos.position.x)* cntTime / bossSkill1CD     ,   magicEndPos.position.y );
     }
     
-    public void callGoblin()
+    public void callGoblin1()
     {
         GetComponent<Animator>().SetTrigger("Guard");
         Instantiate(goblin1,new Vector2(this.transform.position.x + 2,this.transform.position.y + 1),Quaternion.identity);
         Instantiate(goblin2,new Vector2(this.transform.position.x - 2,this.transform.position.y + 1),Quaternion.identity);
+        //GetComponent<Animator>().ResetTrigger("Guard");
+    }
+    public void callGoblin2()
+    {
+        GetComponent<Animator>().SetTrigger("Guard");
+        Instantiate(goblin1,new Vector2(this.transform.position.x + 2,this.transform.position.y + 1),Quaternion.identity);
+        Instantiate(goblin3,new Vector2(this.transform.position.x - 2,this.transform.position.y + 1),Quaternion.identity);
+        //GetComponent<Animator>().ResetTrigger("Guard");
+    }
+
+    public void callGoblin3()
+    {
+        GetComponent<Animator>().SetTrigger("Guard");
+        Instantiate(goblin3,new Vector2(this.transform.position.x + 2,this.transform.position.y + 1),Quaternion.identity);
+        Instantiate(goblin3,new Vector2(this.transform.position.x - 2,this.transform.position.y + 1),Quaternion.identity);
         //GetComponent<Animator>().ResetTrigger("Guard");
     }
 

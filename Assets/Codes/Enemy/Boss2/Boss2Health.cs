@@ -14,6 +14,7 @@ public class Boss2Health : MonoBehaviour
     public Image healthBar2;
     public GameObject bossHealth;
     private Boss2Magic bossmagic;
+    public GameObject healMagic;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class Boss2Health : MonoBehaviour
     bool callgoblinlevel1 = true;
     bool callgoblinlevel2 = true;
     bool callgoblinlevel3 = true;
+    bool callgoblinlevel4 = true;
 
     public void TakeDamage(int damage)
 	{
@@ -52,24 +54,29 @@ public class Boss2Health : MonoBehaviour
         FlashColor(0.2f);
 		health -= damage;
         if(callgoblinlevel1 && health <=30 ){
-            bossmagic.callGoblin();
+            bossmagic.callGoblin1();
             callgoblinlevel1 = false;
         }
         if(callgoblinlevel2 && health <=20 ){
-            bossmagic.callGoblin();
+            bossmagic.callGoblin2();
             callgoblinlevel2 = false;
         }
         if(callgoblinlevel3 && health <=10 ){
-            bossmagic.callGoblin();
+            bossmagic.callGoblin2();
             callgoblinlevel3 = false;
+        }
+        if(callgoblinlevel4 && health <=5 ){
+            bossmagic.callGoblin3();
+            callgoblinlevel4 = false;
         }
 
 		if (health <= 0)
 		{
+             GetComponent<Animator>().SetTrigger("Die");
             AudioManager.instance.Play("Sound/bossWin", 1.0);
             bossHealth.SetActive(false);
 			// GetComponent<Animator>().SetTrigger("Dead");
-            Destroy(gameObject);
+            //Destroy(gameObject);
             
 		}
 	}
@@ -88,6 +95,17 @@ public class Boss2Health : MonoBehaviour
         for(int i =0 ; i< sr.Length ;i++)
         {
             sr[i].color = originalColor[i];
+        }
+    }
+
+    public void GetHeal(int healamount)
+	{
+        if(health + healamount <=40)
+        {
+            health += healamount;
+            Instantiate(healMagic,this.transform.position,Quaternion.identity);
+        }else{
+            health = 40;
         }
     }
 }

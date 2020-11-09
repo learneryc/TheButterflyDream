@@ -8,6 +8,11 @@ public class Goblin_Senser : MonoBehaviour
     public Goblin_Bass m_MonBass;
     private BoxCollider2D  m_touchSensor;
     private CircleCollider2D m_touchSensor2;
+    public enum targettype{
+        Player,
+        Boss
+    }
+    public targettype target;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +29,22 @@ public class Goblin_Senser : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-       if(other.CompareTag("Player"))
+       if(target == targettype.Player && other.CompareTag("Player"))
+        {
+            m_MonBass.Current_Tartget = other.gameObject;
+        }
+        if(target == targettype.Boss && other.CompareTag("Boss"))
         {
             m_MonBass.Current_Tartget = other.gameObject;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-       if(other.CompareTag("Player"))
+       if(target == targettype.Player &&other.CompareTag("Player"))
+        {
+            m_MonBass.Current_Tartget = null;
+        }
+        if(target == targettype.Boss &&other.CompareTag("Boss"))
         {
             m_MonBass.Current_Tartget = null;
         }
