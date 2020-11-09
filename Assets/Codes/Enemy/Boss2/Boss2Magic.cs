@@ -1,21 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Boss2Magic : MonoBehaviour
 {
     public GameObject goblin1;
     public GameObject goblin2;
     public GameObject shieldAttack;
+
+    public float cntTime = 0f ;
+    public  float bossSkill1CD = 20f ;
+
+    public Image bossMagicBar;
+    public Transform magicStartPos;
+    public Transform magicEndPos;
+    private RectTransform barPos;
+
     // Start is called before the first frame update
     void Start()
     {
+          barPos = bossMagicBar.GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        barPos.position =new Vector2( magicStartPos.position.x + (magicEndPos.position.x - magicStartPos.position.x)* cntTime / bossSkill1CD     ,   magicEndPos.position.y );
     }
     
     public void callGoblin()

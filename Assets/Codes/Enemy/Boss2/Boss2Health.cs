@@ -10,9 +10,10 @@ public class Boss2Health : MonoBehaviour
     public int health = 40;
     protected SpriteRenderer[] sr;
     protected Color[] originalColor;
-    private Image healthBar;
+    public Image healthBar1;
+    public Image healthBar2;
     public GameObject bossHealth;
-    public Boss2Magic bossmagic;
+    private Boss2Magic bossmagic;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,17 @@ public class Boss2Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(health >20){
+            healthBar1.fillAmount = (float)(health-20) / 20.0f;
+            healthBar2.fillAmount = 1f;
+        }else if(health <=20 && health >=0){
+            healthBar2.fillAmount = (float)health / 20.0f;
+            healthBar1.fillAmount = 0;
+        }else {
+            healthBar1.fillAmount = 0;
+            healthBar2.fillAmount = 0;
+        }
+
     }
     bool callgoblinlevel1 = true;
     bool callgoblinlevel2 = true;
@@ -53,16 +64,10 @@ public class Boss2Health : MonoBehaviour
             callgoblinlevel3 = false;
         }
 
-		if (health <= 20)
-		{
-			//GetComponent<Animator>().SetBool("IsEnraged", true);
-		}
-
 		if (health <= 0)
 		{
-            //photo.SetActive(true);
             AudioManager.instance.Play("Sound/bossWin", 1.0);
-            //bossHealth.SetActive(false);
+            bossHealth.SetActive(false);
 			// GetComponent<Animator>().SetTrigger("Dead");
             Destroy(gameObject);
             
