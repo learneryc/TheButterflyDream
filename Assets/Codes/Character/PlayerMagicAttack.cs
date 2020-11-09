@@ -94,7 +94,7 @@ public class PlayerMagicAttack : MonoBehaviour
 
      public void getHeal()
      {
-         Instantiate(healhealth);
+         Instantiate(healhealth,transform.position,Quaternion.identity);
          player.curHealth  = player.curHealth + 1;
      }
 

@@ -72,11 +72,11 @@ public class Boss2Health : MonoBehaviour
 
 		if (health <= 0)
 		{
-             GetComponent<Animator>().SetTrigger("Die");
+            // GetComponent<Animator>().SetTrigger("Die");
             AudioManager.instance.Play("Sound/bossWin", 1.0);
             bossHealth.SetActive(false);
 			// GetComponent<Animator>().SetTrigger("Dead");
-            //Destroy(gameObject);
+            Destroy(gameObject);
             
 		}
 	}
