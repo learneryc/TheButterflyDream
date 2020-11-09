@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour
 	public Transform player;
 	public Transform pos;
 
-	public bool isFlipped = false;
+	public bool isFlipped = true;
 
 	public void LookAtPlayer()
 	{
