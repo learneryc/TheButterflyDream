@@ -449,8 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 3
-  distance: 5
+  speed: 4
+  distance: 6
   rb: {fileID: 5060891398872111602}
 --- !u!50 &5060891398872111602
 Rigidbody2D:
