@@ -112,7 +112,7 @@ public class Swordman : PlayerController
 
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
-            /*if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q))
             {
                 Vector3 mousePosition = Input.mousePosition;
                 float mPosX = mousePosition.x;
@@ -121,16 +121,10 @@ public class Swordman : PlayerController
                 {
                     m_Anim.Play("Attack");
                     AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
-//                    return;
-//                    //Debug.Log ("touch area is UI");
                 }
-//                } else if (!(mPosX >= 400f && mPosX <= 863f && mPosY <= 140f && mPosY >= 60f)) {
-//                    return;
-//                }
-
-            }*/
-            //else
-            //{
+            }
+            else
+            {
 
                 if (m_MoveX == 0)
                 {
@@ -144,7 +138,7 @@ public class Swordman : PlayerController
                     m_Anim.Play("Run");
                 }
 
-            //}
+            }
         }
 
 
@@ -153,65 +147,6 @@ public class Swordman : PlayerController
             m_Anim.Play("Die");
 
         }
-
-//        if (Input.GetKey(KeyCode.Mouse0)) {
-//            Vector3 mousePosition = Input.mousePosition;
-//            float mPosX = mousePosition.x;
-//            float mPosY = mousePosition.y;
-//
-//            if (mPosX >= 663f && mPosX <= 863f && mPosY <= 140f && mPosY >= 60f) {
-//                m_MoveX = Input.GetAxis("Fire1");
-//                m_Anim.Play("Run");
-//                if (isGrounded)
-//                {
-//                    transform.transform.Translate(Vector2.right * m_MoveX * MoveSpeed * Time.deltaTime);
-//
-//                }
-//                else
-//                {
-//                    transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
-//
-//                }
-//
-//                if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-//                    return;
-//
-//                if (!m_FacingRight)
-//                {
-//                    Flip();
-//                    //Flip(false);
-//                }
-//            } else if (mPosX >= 400f && mPosX < 663f && mPosY <= 140f && mPosY >= 60f) {
-//                m_MoveX = Input.GetAxis("Fire1");
-//                m_Anim.Play("Run");
-//                if (isGrounded)
-//                {
-//
-//                    transform.transform.Translate(Vector2.left * -m_MoveX * MoveSpeed * Time.deltaTime);
-//
-//                }
-//                else
-//                {
-//
-//                    transform.transform.Translate(new Vector3(-m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
-//
-//                }
-//
-//                if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-//                    return;
-//
-//                // if (!Input.GetKey(KeyCode.RightArrow))
-//                //     Flip(true);
-//                if (m_FacingRight)
-//                {
-//                    Flip();
-//                    //Flip(false);
-//                }
-//            }
-//
-//
-//
-//        }
 
         if (Input.GetKey(KeyCode.RightArrow)||joystick.Horizontal >= .2f)
         {
