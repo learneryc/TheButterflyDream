@@ -114,14 +114,7 @@ public class Swordman : PlayerController
         {
             if (Input.GetKey(KeyCode.Q))
             {
-                Vector3 mousePosition = Input.mousePosition;
-                float mPosX = mousePosition.x;
-                float mPosY = mousePosition.y;
-                if (!EventSystem.current.IsPointerOverGameObject ())
-                {
-                    m_Anim.Play("Attack");
-                    AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
-                }
+                attack();
             }
             else
             {
@@ -209,31 +202,37 @@ public class Swordman : PlayerController
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
+            jump();
+        }
+    }
 
-            if (currentJumpCount < JumpCount)  // 0 , 1
+    public void attack() {
+        Vector3 mousePosition = Input.mousePosition;
+        float mPosX = mousePosition.x;
+        float mPosY = mousePosition.y;
+        m_Anim.Play("Attack");
+        AudioManager.instance.Play("Sound/attackWithoutHitting", 1.0);
+    }
+
+    public void jump() {
+        if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            return;
+
+        if (currentJumpCount < JumpCount)  // 0 , 1
+        {
+            if (!IsSit)
             {
-                if (!IsSit)
-                {
-                    prefromJump();
+                prefromJump();
 
-                }
-                else
-                {
-                    DownJump();
-
-                }
-
+            }
+            else
+            {
+                DownJump();
 
             }
 
 
         }
-
-
-
-
     }
 
     protected override void LandingEvent()
