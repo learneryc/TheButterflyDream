@@ -13,6 +13,7 @@ public class Swordman : PlayerController
     public Renderer[] myRenderer;
     public bool isInvulnerable = false;
     public bool healthReduceOne = false;
+    public Joystick joystick;
 
     private void Start()
     {
@@ -102,6 +103,7 @@ public class Swordman : PlayerController
 
 
         m_MoveX = Input.GetAxis("Horizontal");
+        m_MoveX = m_MoveX!=0? m_MoveX:joystick.Horizontal;
 
 
    
@@ -110,7 +112,7 @@ public class Swordman : PlayerController
 
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
-            if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
+            /*if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Q))
             {
                 Vector3 mousePosition = Input.mousePosition;
                 float mPosX = mousePosition.x;
@@ -126,9 +128,9 @@ public class Swordman : PlayerController
 //                    return;
 //                }
 
-            }
-            else
-            {
+            }*/
+            //else
+            //{
 
                 if (m_MoveX == 0)
                 {
@@ -142,7 +144,7 @@ public class Swordman : PlayerController
                     m_Anim.Play("Run");
                 }
 
-            }
+            //}
         }
 
 
@@ -211,7 +213,7 @@ public class Swordman : PlayerController
 //
 //        }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)||joystick.Horizontal >= .2f)
         {
 
             if (isGrounded)
@@ -237,7 +239,7 @@ public class Swordman : PlayerController
             }
 
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow)||joystick.Horizontal <= -.2f)
         {
 
             if (isGrounded)
