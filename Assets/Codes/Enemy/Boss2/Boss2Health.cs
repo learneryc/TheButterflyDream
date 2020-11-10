@@ -75,9 +75,9 @@ public class Boss2Health : MonoBehaviour
             // GetComponent<Animator>().SetTrigger("Die");
             AudioManager.instance.Play("Sound/bossWin", 1.0);
             bossHealth.SetActive(false);
-			// GetComponent<Animator>().SetTrigger("Dead");
-            Destroy(gameObject);
-            
+            //Destroy(gameObject);
+            SayStory();
+            // RunAway();
 		}
 	}
 
@@ -107,5 +107,19 @@ public class Boss2Health : MonoBehaviour
         }else{
             health = 40;
         }
+    }
+
+    public void SayStory(){
+        GetComponent<Animator>().SetTrigger("Sit");
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        GameObject.Find("Weapon_Shield"). GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+    }
+    public GameObject light;
+    public void RunAway(){
+        Instantiate(light,this.transform.position,Quaternion.identity);
+    }
+    public void Disappear(){
+        Destroy(gameObject);
     }
 }
