@@ -157,8 +157,8 @@ public class Swordman : PlayerController
 
             }
 
-            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
+            //if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                //return;
 
             if (!m_FacingRight)
             {
@@ -185,8 +185,8 @@ public class Swordman : PlayerController
 
             }
 
-            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
+            //if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                //return;
 
             // if (!Input.GetKey(KeyCode.RightArrow))
             //     Flip(true);
