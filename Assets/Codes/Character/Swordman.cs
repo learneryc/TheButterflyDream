@@ -14,6 +14,7 @@ public class Swordman : PlayerController
     public bool isInvulnerable = false;
     public bool healthReduceOne = false;
     public Joystick joystick;
+    public int dropDownPosition = -20;
 
     private void Start()
     {
@@ -260,7 +261,7 @@ public class Swordman : PlayerController
     }
 
     public bool checkDropDown() {
-        if (m_rigidbody.position.y < -20) {
+        if (m_rigidbody.position.y < dropDownPosition) {
             return true;
         } else {
             return false;
