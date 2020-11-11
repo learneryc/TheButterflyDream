@@ -15,6 +15,7 @@ public class Boss2Health : MonoBehaviour
     public GameObject bossHealth;
     private Boss2Magic bossmagic;
     public GameObject healMagic;
+    public GameObject Record;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +78,7 @@ public class Boss2Health : MonoBehaviour
             bossHealth.SetActive(false);
             //Destroy(gameObject);
             SayStory();
+            Record.SetActive(true);
             // RunAway();
 		}
 	}
