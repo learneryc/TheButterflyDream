@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelFour.unity
     guid: 7bdbbd84679e34a4da6b40fc5fee6b59
   - enabled: 1
+    path: Assets/Scenes/PostLevelThree.unity
+    guid: 3ddaf7cddf8a244e791b0aacd726ae98
+  - enabled: 1
     path: Assets/Scenes/LevelFourBoss.unity
     guid: 4405e3ec322d24ae0b02e6556bbaf41e
   - enabled: 1
