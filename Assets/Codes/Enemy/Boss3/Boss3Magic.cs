@@ -77,9 +77,18 @@ public class Boss3Magic : MonoBehaviour
             bossStage2_1.SetActive(true);
             bossStage2_2.SetActive(true);
             boss3CD = boss3IdleCD;
-            // skill 
-             skill2 = true;
-             skill1 = true;
+            
+            //clean skill
+             GetComponent<Boss3Attack>().EndLightningAttack();
+
+            bossStage2_1.GetComponent<BoxCollider2D>().enabled = true;
+            bossStage2_2.GetComponent<BoxCollider2D>().enabled = true;
+            int a =  Random.Range(0,2) %2 ;
+            if(a == 0){
+                bossStage2_1.GetComponent<BoxCollider2D>().enabled = false;
+            }else{
+                bossStage2_2.GetComponent<BoxCollider2D>().enabled = false;
+            }
             
         }
         if(bossStage ==boss3stage.idle && cntTime >= boss3CD){
@@ -91,7 +100,9 @@ public class Boss3Magic : MonoBehaviour
             bossStage2_1.SetActive(false);
             bossStage2_2.SetActive(false);
             boss3CD = boss3ChantCD;
-            GetComponent<Boss3Attack>().EndLightningAttack();
+            // skill 
+             skill2 = true;
+             skill1 = true;
             
         }
         barPos.position =new Vector2( magicStartPos.position.x + (magicEndPos.position.x - magicStartPos.position.x)* cntTime / (boss3CD )     ,   magicEndPos.position.y );
