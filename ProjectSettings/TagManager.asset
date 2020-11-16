@@ -13,6 +13,7 @@ TagManager:
   - Monster
   - Mon_WeaponCollider
   - Goblin
+  - Boss3
   layers:
   - Default
   - TransparentFX

@@ -47,6 +47,9 @@ public class FireAttack : MonoBehaviour
             other.GetComponent<Goblin_Bass>().TakeDamage(damage);
             Destroy(gameObject);
         }
-        
+        if(other.gameObject.CompareTag("Boss3")){
+            GameObject.Find("Boss3").GetComponent<Boss3Health>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }

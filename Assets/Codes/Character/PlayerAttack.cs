@@ -61,5 +61,8 @@ public class PlayerAttack : MonoBehaviour
                 other.GetComponent<Boss2Health>().TakeDamage(damage);
             }
         }
+        if(other.gameObject.CompareTag("Boss3")){
+            GameObject.Find("Boss3").GetComponent<Boss3Health>().TakeDamage(damage);
+        }
     }
 }
