@@ -2511,7 +2511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b85556abd314f3f870c18c013fdcef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMode: 0
+  clickMode: 1
   nextClickDelay: 0
   cancelEnabled: 1
   ignoreMenuClicks: 1
