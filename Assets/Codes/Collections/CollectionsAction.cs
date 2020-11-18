@@ -44,7 +44,9 @@ public class CollectionsAction : MonoBehaviour
     }
     
     public void PickUp(){
-        AudioManager.instance.Play("Sound/pickup");
-    	Destroy(gameObject);
+        if (pickUpAllowed) {
+            AudioManager.instance.Play("Sound/pickup");
+        	Destroy(gameObject);
+        }
     }
 }

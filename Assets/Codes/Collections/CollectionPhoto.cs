@@ -16,20 +16,20 @@ public class CollectionPhoto : CollectionsAction
     void Update()
     {
 
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PersistentData.update();
-            fc.ExecuteBlock("Photo");
+        if(Input.GetKeyDown(KeyCode.E)){
+            //PersistentData.update();
+            
         	PickUp();
         }
         
     }
 
     void PickUp(){
+        if (pickUpAllowed) {
+            AudioManager.instance.Play("Sound/pickup");
+            Destroy(gameObject);
+            fc.ExecuteBlock("Photo");
+        }
         
-            /*GameObject.Find("LevelLoader").
-            GetComponent<LevelLoader>().MoveToNextLevel();
-            PersistentData.update();*/
-        AudioManager.instance.Play("Sound/pickup");
-    	Destroy(gameObject);
     }
 }

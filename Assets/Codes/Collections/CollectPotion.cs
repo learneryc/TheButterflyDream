@@ -15,18 +15,19 @@ public class CollectPotion : CollectionsAction
     void Update()
     {
 
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PersistentData.update();
+        if(Input.GetKeyDown(KeyCode.E)){
             PickUp();
         }
 
     }
 
     void PickUp(){
-        AudioManager.instance.Play("Sound/pickup");
-        Destroy(gameObject);
-        potionCounter = PlayerPrefs.GetInt("potionCounter");
-        potionCounter++;
-        PlayerPrefs.SetInt("potionCounter", potionCounter);
+        if (pickUpAllowed) {
+            AudioManager.instance.Play("Sound/pickup");
+            Destroy(gameObject);
+            potionCounter = PlayerPrefs.GetInt("potionCounter");
+            potionCounter++;
+            PlayerPrefs.SetInt("potionCounter", potionCounter);
+        }
     }
 }

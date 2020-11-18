@@ -16,20 +16,22 @@ public class CollectionRing : CollectionsAction
     void Update()
     {
 
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
+        /*if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
             PersistentData.update();
             fc.ExecuteBlock("Ring");
         	PickUp();
-        }
-        
+        }*/
+        if (Input.GetKeyDown(KeyCode.E))
+            PickUp();
     }
 
     void PickUp(){
         
-            /*GameObject.Find("LevelLoader").
-            GetComponent<LevelLoader>().MoveToNextLevel();
-            PersistentData.update();*/
-        AudioManager.instance.Play("Sound/pickup");
-    	Destroy(gameObject);
+        if (pickUpAllowed) {
+            AudioManager.instance.Play("Sound/pickup");
+            fc.ExecuteBlock("Ring");
+            Destroy(gameObject);
+        }
+        
     }
 }
