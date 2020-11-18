@@ -20,6 +20,7 @@ public class LevelLoader : MonoBehaviour
     public void MoveToNextLevel(string nextScene)
     {
         if (nextScene == "") return;
+        if (nextScene == "LevelOne") PlayerPrefs.SetInt("potionCounter",0);
         sceneName = nextScene;
         trigger = "Crossfade";
         StartCoroutine(LoadLevel());

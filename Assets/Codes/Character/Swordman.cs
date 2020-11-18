@@ -15,6 +15,7 @@ public class Swordman : PlayerController
     public bool healthReduceOne = false;
     public Joystick joystick;
     public int dropDownPosition = -20;
+    public int potionCounter = 0;
 
     private void Start()
     {
@@ -37,6 +38,9 @@ public class Swordman : PlayerController
             if (!healthReduceOne) {
                 curHealth -= 2;
                 healthReduceOne = true;
+                potionCounter = PlayerPrefs.GetInt("potionCounter");
+                potionCounter++;
+                PlayerPrefs.SetInt("potionCounter", potionCounter);
             }
             isDroppedDown = true;
             if(curHealth <= 0) {
