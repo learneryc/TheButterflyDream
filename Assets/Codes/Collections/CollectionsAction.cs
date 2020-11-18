@@ -9,12 +9,14 @@ public class CollectionsAction : MonoBehaviour
 
 	public bool pickUpAllowed ;
 	public Text pickUpText;
+    private ButtonsSwitch Control;
     
 
     // Start is called before the first frame update
     public void Start()
     {
         pickUpText.gameObject.SetActive(false);
+        Control = GameObject.Find("Control").GetComponent<ButtonsSwitch>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class CollectionsAction : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision){
     	if(collision.gameObject.name.Equals("Jack")){
     		pickUpText.gameObject.SetActive(true);
+            Control.SwitchToInteraction();
     		pickUpAllowed = true;
     	}
     }
@@ -35,7 +38,8 @@ public class CollectionsAction : MonoBehaviour
     public void OnTriggerExit2D(Collider2D collision){
     	if(collision.gameObject.name.Equals("Jack")){
     		pickUpText.gameObject.SetActive(false);
-    		pickUpAllowed = false;
+            Control.SwitchToAction();
+            pickUpAllowed = false;
     	}
     }
     
