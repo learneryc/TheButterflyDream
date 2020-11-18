@@ -18,6 +18,7 @@ public class PlayerMagicAttack : MonoBehaviour
     private bool magic3Allowed = true;
     public float magic3CDTime = 10f;
     public float healHealthLastTime = 1.5f;
+    private int potionCounter = 0;
 
     // magic2
     private Animator anim;
@@ -96,6 +97,9 @@ public class PlayerMagicAttack : MonoBehaviour
      {
          Instantiate(healhealth,transform.position,Quaternion.identity);
          player.curHealth  = player.curHealth + 1;
+         potionCounter = PlayerPrefs.GetInt("potionCounter");
+         potionCounter--;
+         PlayerPrefs.SetInt("potionCounter", potionCounter);
      }
 
 }
