@@ -95,6 +95,7 @@ public class PlayerMagicAttack : MonoBehaviour
 
      public void getHeal()
      {
+         if(player.curHealth == 10)return;
          Instantiate(healhealth,transform.position,Quaternion.identity);
          player.curHealth  = player.curHealth + 1;
          potionCounter = PlayerPrefs.GetInt("potionCounter");
