@@ -2852,6 +2852,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &670251565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670251566}
+  m_Layer: 0
+  m_Name: Firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &670251566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670251565}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.21, y: 0.39, z: -9.916003}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 790900393}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706262262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,6 +3958,36 @@ CapsuleCollider2D:
   m_Offset: {x: -0.011700579, y: 0.24816155}
   m_Size: {x: 0.6716046, y: 1.2406578}
   m_Direction: 0
+--- !u!1 &1015632125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015632126}
+  m_Layer: 0
+  m_Name: Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1015632126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015632125}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: -0.42, z: -9.916003}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 790900393}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169400327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6240,6 +6300,29 @@ MonoBehaviour:
   componentEnabledOutsideFungusPriority:
   - {fileID: 243274717}
   componentEnabledInsideFungusPriority: []
+--- !u!114 &1750195412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750195409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ead76db3a0348b58ad8c6505136a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magic1: {fileID: 7528591603336462185, guid: ca7075a5a5405425dba6b04d01658bb8, type: 3}
+  magic2: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
+  magic3: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
+  healhealth: {fileID: 4985483757072088910, guid: 05a29fbceffba447b88128b925505729,
+    type: 3}
+  firePoint: {fileID: 670251566}
+  magic1CDTime: 5
+  magic2CDTime: 5
+  magic2LastTime: 5
+  magic3CDTime: 10
+  healHealthLastTime: 1.5
 --- !u!1 &1786398860
 GameObject:
   m_ObjectHideFlags: 0
