@@ -718,14 +718,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magic1: {fileID: 7528591603336462185, guid: ca7075a5a5405425dba6b04d01658bb8, type: 3}
   magic2: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
-  magic3: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
+  magic3: {fileID: 2972452259866446152, guid: a2c39b2f2349943c6959f6b5c2ae940b, type: 3}
   healhealth: {fileID: 4985483757072088910, guid: 05a29fbceffba447b88128b925505729,
     type: 3}
   firePoint: {fileID: 623949663}
   magic1CDTime: 5
   magic2CDTime: 20
   magic2LastTime: 5
-  magic3CDTime: 10
+  magic3CDTime: 20
   healHealthLastTime: 1.5
 --- !u!114 &173268988
 MonoBehaviour:
@@ -968,7 +968,7 @@ PrefabInstance:
     - target: {fileID: 6494048373383633760, guid: ddb2c2231b3c44ee0849026116e1540d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 260
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 6494048373383633760, guid: ddb2c2231b3c44ee0849026116e1540d,
         type: 3}
@@ -2085,7 +2085,7 @@ PrefabInstance:
     - target: {fileID: 4457152528616858903, guid: 7ac9ee33a33b247e1ab89990f4085b80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 260
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4457152528616858903, guid: 7ac9ee33a33b247e1ab89990f4085b80,
         type: 3}
@@ -2719,7 +2719,7 @@ PrefabInstance:
     - target: {fileID: 4470952929596647081, guid: a2e2996f9c84748a18e6e26cc4ceda8f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 260
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4470952929596647081, guid: a2e2996f9c84748a18e6e26cc4ceda8f,
         type: 3}
@@ -4662,7 +4662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000030517578}
+  m_AnchoredPosition: {x: -0.000061035156, y: 15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1363023681

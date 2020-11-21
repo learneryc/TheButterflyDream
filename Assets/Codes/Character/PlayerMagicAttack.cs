@@ -32,6 +32,11 @@ public class PlayerMagicAttack : MonoBehaviour
     {
         player = GetComponent<Swordman>();
         anim = this.transform.Find("model").GetComponent<Animator>();
+        // for test
+        // PersistentData.setMagic1(1);
+        // PersistentData.setMagic2(1);
+        // PersistentData.setMagic3(1);
+        // PlayerPrefs.SetInt("potionCounter", 5);
     }
 
     // Update is called once per frame
@@ -82,7 +87,7 @@ public class PlayerMagicAttack : MonoBehaviour
      //Magic 3
      public void magic3Magic()
      {
-         //Instantiate(magic3, firePoint.position, firePoint.rotation);
+         Instantiate(magic3, firePoint.position, firePoint.rotation);
          magic3Allowed = false;
          StartCoroutine(magic3CD());
      }
@@ -96,11 +101,13 @@ public class PlayerMagicAttack : MonoBehaviour
      public void getHeal()
      {
          if(player.curHealth == 10)return;
-         Instantiate(healhealth,transform.position,Quaternion.identity);
-         player.curHealth  = player.curHealth + 1;
          potionCounter = PlayerPrefs.GetInt("potionCounter");
+         if(potionCounter <=0 )return ;
          potionCounter--;
          PlayerPrefs.SetInt("potionCounter", potionCounter);
+         Instantiate(healhealth,transform.position,Quaternion.identity);
+         player.curHealth  = player.curHealth + 1;
+         
      }
 
 }
