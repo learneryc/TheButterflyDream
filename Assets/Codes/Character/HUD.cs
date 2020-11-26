@@ -9,13 +9,16 @@ public class HUD : MonoBehaviour
 
     public Image HeartUI;
 
-    public Swordman player;
+    public BoundObjects boundObjects;
 
 
     void Start () {
+    	if (boundObjects == null)
+    		boundObjects = GameObject.Find("Icons")
+    						.GetComponent<BoundObjects>();
     }
 
     void Update() {
-        HeartUI.sprite = HeartSprites[player.curHealth];
+        HeartUI.sprite = HeartSprites[boundObjects.Player.curHealth];
     }
 }

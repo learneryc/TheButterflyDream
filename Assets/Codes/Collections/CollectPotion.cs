@@ -25,7 +25,7 @@ public class CollectPotion : CollectionsAction
         if (pickUpAllowed) {
             AudioManager.instance.Play("Sound/pickup");
             Destroy(gameObject);
-            potionCounter = PlayerPrefs.GetInt("potionCounter");
+            potionCounter = PlayerPrefs.GetInt("potionCounter", 0);
             potionCounter++;
             PlayerPrefs.SetInt("potionCounter", potionCounter);
         }

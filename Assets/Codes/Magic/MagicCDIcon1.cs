@@ -18,7 +18,11 @@ public class MagicCDIcon1 : MonoBehaviour
     void Start()
     {
         if(PersistentData.getMagic1() == 0){
-            magicbtn.gameObject.SetActive(false);
+            //magicbtn.gameObject.SetActive(false);
+        }
+        if (playermagic == null) {
+            playermagic = GameObject.Find("Icons")
+                            .GetComponent<BoundObjects>().BindPlayerMagic();
         }
         magicbtn.onClick.AddListener(Onclickbtn);
         cdtime = playermagic.magic1CDTime;
