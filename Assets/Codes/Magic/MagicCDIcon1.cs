@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class MagicCDIcon1 : MonoBehaviour
@@ -9,7 +10,7 @@ public class MagicCDIcon1 : MonoBehaviour
     //FireBall
     public Button magicbtn;
     public Image mask;
-    public Text cd;
+    //public TextMeshProUGUI cd;
     private float cdtime = 3f;
     private float cultime = 0f;
     public PlayerMagicAttack playermagic;
@@ -39,7 +40,7 @@ public class MagicCDIcon1 : MonoBehaviour
                 cultime += Time.deltaTime;
                 mask.fillAmount = (cdtime - cultime) / cdtime;
 
-                cd.text = Mathf.CeilToInt( cdtime - cultime).ToString();
+                //cd.text = Mathf.CeilToInt( cdtime - cultime).ToString();
             }
 
             if(mask.fillAmount == 0)
@@ -58,13 +59,13 @@ public class MagicCDIcon1 : MonoBehaviour
     public void StartMagic(){
         mask.fillAmount = 1;
         magicbtn.interactable = false;
-        cd.text = cdtime.ToString();
+        //cd.text = cdtime.ToString();
     }
 
     public void EndMagic(){
         mask.fillAmount = 0;
         magicbtn.interactable = true;
-        cd.text = string.Empty;
+        //cd.text = string.Empty;
         cultime = 0;
     }
 }

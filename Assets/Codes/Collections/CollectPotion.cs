@@ -14,7 +14,6 @@ public class CollectPotion : CollectionsAction
     // Update is called once per frame
     void Update()
     {
-
         if(Input.GetKeyDown(KeyCode.E)){
             PickUp();
         }

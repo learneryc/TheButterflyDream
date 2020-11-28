@@ -121,5 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30dc28e7a013a4fe2a25e10b1498eafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpAllowed: 1
+  pickUpAllowed: 0
   pickUpText: {fileID: 0}

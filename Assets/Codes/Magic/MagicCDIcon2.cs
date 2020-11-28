@@ -8,7 +8,7 @@ public class MagicCDIcon2 : MonoBehaviour
     //Healing 
     public Button magicbtn;
     public Image mask;
-    public Text cd;
+    //public Text cd;
     private float cdtime = 3f;
     private float cultime = 0f;
     public PlayerMagicAttack playermagic;
@@ -37,7 +37,7 @@ public class MagicCDIcon2 : MonoBehaviour
                 cultime += Time.deltaTime;
                 mask.fillAmount = (cdtime - cultime) / cdtime;
 
-                cd.text = Mathf.CeilToInt( cdtime - cultime).ToString();
+                //cd.text = Mathf.CeilToInt( cdtime - cultime).ToString();
             }
 
             if(mask.fillAmount == 0)
@@ -55,13 +55,13 @@ public class MagicCDIcon2 : MonoBehaviour
     public void StartMagic(){
         mask.fillAmount = 1;
         magicbtn.interactable = false;
-        cd.text = cdtime.ToString();
+        //cd.text = cdtime.ToString();
     }
 
     public void EndMagic(){
         mask.fillAmount = 0;
         magicbtn.interactable = true;
-        cd.text = string.Empty;
+        //cd.text = string.Empty;
         cultime = 0;
     }
 }
