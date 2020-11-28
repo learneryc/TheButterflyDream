@@ -12,24 +12,21 @@ public class DoorEnter : MonoBehaviour
     private bool isDoor;
 
     public Text enterDoorText;
+    private ButtonsSwitch Control;
 
     // Start is called before the first frame update
     void Start()
     {
         enterDoorText.gameObject.SetActive(false);
         playerTransform = GameObject.Find("Jack").transform;
+        Control = GameObject.Find("Control").GetComponent<ButtonsSwitch>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isDoor) {
-            Vector3 pos = playerTransform.position;
-            pos.x = backDoor.position.x;
-            pos.y = backDoor.position.y - 0.8f;
-            playerTransform.position = pos;
-            Debug.Log(playerTransform.position);
-            System.Threading.Thread.Sleep(100);
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            transform();
         }
     }
 
@@ -37,6 +34,7 @@ public class DoorEnter : MonoBehaviour
         if (other.CompareTag("Player")) {
             isDoor = true;
             enterDoorText.gameObject.SetActive(true);
+            Control.SwitchToInteraction();
         }
     }
 
@@ -44,6 +42,17 @@ public class DoorEnter : MonoBehaviour
         if (other.CompareTag("Player")) {
             isDoor = false;
             enterDoorText.gameObject.SetActive(false);
+            Control.SwitchToAction();
+        }
+    }
+    public void transform() {
+        if (isDoor) {
+            Vector3 pos = playerTransform.position;
+            pos.x = backDoor.position.x;
+            pos.y = backDoor.position.y - 0.8f;
+            playerTransform.position = pos;
+            Debug.Log(playerTransform.position);
+            System.Threading.Thread.Sleep(100);
         }
     }
 }
