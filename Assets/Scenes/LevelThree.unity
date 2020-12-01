@@ -374,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
@@ -575,6 +575,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
 --- !u!1 &83467564
@@ -745,7 +750,7 @@ PrefabInstance:
     - target: {fileID: 95365903431829052, guid: c33db19546bdfea469e3ff5a5d258faa,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 556188167626693672, guid: c33db19546bdfea469e3ff5a5d258faa,
         type: 3}
@@ -838,7 +843,7 @@ PrefabInstance:
     - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -1072,6 +1077,11 @@ PrefabInstance:
     - target: {fileID: 4177602086859508, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -2008,7 +2018,7 @@ PrefabInstance:
     - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
@@ -23703,7 +23713,7 @@ PrefabInstance:
     - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -23879,6 +23889,11 @@ PrefabInstance:
     - target: {fileID: 4904643321556534, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -25069,7 +25084,7 @@ PrefabInstance:
     - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2204099318924440381, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
@@ -25279,7 +25294,7 @@ PrefabInstance:
     - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
@@ -26333,7 +26348,7 @@ PrefabInstance:
     - target: {fileID: 95969883552707134, guid: 2f68aa3d8e649e54e9fb865e568390fb,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f68aa3d8e649e54e9fb865e568390fb, type: 3}
@@ -26544,7 +26559,7 @@ PrefabInstance:
     - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -31468,7 +31483,7 @@ PrefabInstance:
     - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -31976,7 +31991,7 @@ PrefabInstance:
     - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -33410,7 +33425,7 @@ PrefabInstance:
     - target: {fileID: 95681267380860936, guid: b60e62d2609863a4fb2a70c20c2f44ee,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60e62d2609863a4fb2a70c20c2f44ee, type: 3}
@@ -33689,7 +33704,7 @@ PrefabInstance:
     - target: {fileID: 95189635152289818, guid: 6bd0e47f6f072454eb1e5796a8eb2e49,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd0e47f6f072454eb1e5796a8eb2e49, type: 3}
@@ -33776,7 +33791,7 @@ PrefabInstance:
     - target: {fileID: 95424217684415618, guid: 26de7c5f0960c5d46b3073787803c9b1,
         type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26de7c5f0960c5d46b3073787803c9b1, type: 3}
