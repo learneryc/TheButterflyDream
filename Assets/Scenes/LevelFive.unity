@@ -26142,7 +26142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpAllowed: 0
   pickUpText: {fileID: 0}
-  BlockName: Record
+  BlockName: Ending
 --- !u!61 &569480564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27317,6 +27317,11 @@ GameObject:
   - component: {fileID: 1084160465}
   - component: {fileID: 1084160464}
   - component: {fileID: 1084160473}
+  - component: {fileID: 1084160478}
+  - component: {fileID: 1084160477}
+  - component: {fileID: 1084160476}
+  - component: {fileID: 1084160475}
+  - component: {fileID: 1084160474}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -27476,7 +27481,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -88
     y: 78.5
-    width: 88
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27493,9 +27498,14 @@ MonoBehaviour:
   - {fileID: 1084160462}
   - {fileID: 1084160448}
   - {fileID: 1084160447}
+  - {fileID: 1084160478}
+  - {fileID: 1084160477}
+  - {fileID: 1084160476}
   - {fileID: 1084160461}
+  - {fileID: 1084160475}
   - {fileID: 1084160450}
   - {fileID: 1084160445}
+  - {fileID: 1084160474}
   suppressAllAutoSelections: 0
 --- !u!114 &1084160452
 MonoBehaviour:
@@ -27523,7 +27533,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1084160451}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1084160474}
   variables: []
   description: 
   stepPause: 0
@@ -27691,7 +27702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -234
     y: -7
-    width: 106
+    width: 66
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27978,9 +27989,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 159
+    x: 160
     y: 71
-    width: 83
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27990,6 +28001,141 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList: []
   suppressAllAutoSelections: 0
+--- !u!114 &1084160474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084160444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 139
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: LevelSix
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1084160475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084160444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 0
+  storyText: What do you think?
+  description: 
+  character: {fileID: 577886427}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1084160476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084160444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 137
+  indentLevel: 0
+  storyText: '"I don''t believe he will just give up like this, there must be something
+    behind it!
+
+    It seems to be a big conspiracy."
+
+'
+  description: 
+  character: {fileID: 577886427}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1084160477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084160444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 136
+  indentLevel: 0
+  storyText: '"I tried to make salad and steak for the first time tonight, but it
+    was unexpectedly delicious. Would you like to try it?"
+
+'
+  description: 
+  character: {fileID: 577886427}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1084160478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084160444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 135
+  indentLevel: 0
+  storyText: Here is some message from Rose.
+  description: 
+  character: {fileID: 577886427}
+  portrait: {fileID: 21300000, guid: 16f64776947ce4c4d8c0f8c3f499f3a6, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &1120045081
 PrefabInstance:
   m_ObjectHideFlags: 0
