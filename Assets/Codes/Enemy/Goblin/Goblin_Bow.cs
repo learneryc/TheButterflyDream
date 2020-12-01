@@ -82,8 +82,8 @@ public class Goblin_Bow : Goblin_Bass
         m_HP -= damage;
         if(m_HP <=0)
         {
-            m_StateAnim = StateAnim.Die;
-            m_Anim.Play("Die");
+            //m_StateAnim = StateAnim.Die;
+            //m_Anim.Play("Die");
             StartCoroutine(DieState());
             return;
         }
