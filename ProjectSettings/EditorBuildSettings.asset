@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelFourBoss.unity
     guid: 4405e3ec322d24ae0b02e6556bbaf41e
   - enabled: 1
+    path: Assets/Scenes/PostLevelSix.unity
+    guid: f408c655529524bcfbfb8ac7adf7f7fa
+  - enabled: 1
     path: Assets/Scenes/MazeOne.unity
     guid: 49066e737586d4f43aa738c38f8339f9
   - enabled: 1
@@ -59,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSix.unity
     guid: 58a60bac803a641c79f4a6f1865bd164
+  - enabled: 1
+    path: Assets/Scenes/LevelSevenBoss.unity
+    guid: 5c798d310e3714ab19b9fe7eaa8959e0
   m_configObjects: {}
