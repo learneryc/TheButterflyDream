@@ -21,8 +21,10 @@ public class CollectionRing : CollectionsAction
             fc.ExecuteBlock("Ring");
         	PickUp();
         }*/
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)){
+            PersistentData.update();
             PickUp();
+        }
     }
 
     void PickUp(){
