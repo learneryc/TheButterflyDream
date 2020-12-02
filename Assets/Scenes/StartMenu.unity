@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca8b9c00ce604851a4bf41f95944c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickTime: 0.17
+  clickTime: 0.22
 --- !u!114 &334507726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +928,7 @@ Animator:
   m_GameObject: {fileID: 455424144}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1281,7 +1281,7 @@ Animator:
   m_GameObject: {fileID: 483870479}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca8b9c00ce604851a4bf41f95944c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickTime: 0.17
+  clickTime: 0.22
 --- !u!1 &581189953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1787,7 @@ Animator:
   m_GameObject: {fileID: 834740031}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1808,7 +1808,6 @@ GameObject:
   - component: {fileID: 858639142}
   - component: {fileID: 858639141}
   - component: {fileID: 858639140}
-  - component: {fileID: 858639143}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1939,25 +1938,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858639138}
   m_CullTransparentMesh: 0
---- !u!95 &858639143
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858639138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &918905919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,10 +2062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  pause: 0
-  pauseAngle: 1
-  pauseTime: 60
+  speed: 1
+  pause: 1
+  pauseAngle: 90
+  pauseTime: 200
   scale: 0
   size: 1
   fadingColor: 1
@@ -2803,7 +2783,7 @@ Animator:
   m_GameObject: {fileID: 1113143041}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3072,7 +3052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3793,7 +3773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4462,7 +4442,7 @@ Animator:
   m_GameObject: {fileID: 1710927748}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4623,7 +4603,7 @@ Animator:
   m_GameObject: {fileID: 1736949769}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4685,7 +4665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca8b9c00ce604851a4bf41f95944c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickTime: 0.17
+  clickTime: 0.22
 --- !u!1 &1821162925
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,7 +5463,7 @@ Animator:
   m_GameObject: {fileID: 2080123978}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daa39b15979a24597b11a29e4025c71d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 387cf9b6fa291443b8a722585c189174, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5542,7 +5522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
