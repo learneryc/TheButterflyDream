@@ -2549,7 +2549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hit "E" to pick up
+  m_Text: Hit "E" or button to pick up
 --- !u!212 &472372630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2615,17 +2615,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472372628}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0883567, y: 3.0883567, z: 3.0883567}
+  m_LocalScale: {x: 2.8309898, y: 2.8309898, z: 2.8309898}
   m_Children: []
   m_Father: {fileID: 195919419}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 366}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 375}
+  m_SizeDelta: {x: 244.663, y: 28.306728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &522102605 stripped
 GameObject:

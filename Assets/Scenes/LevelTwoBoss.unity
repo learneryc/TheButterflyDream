@@ -3653,8 +3653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 366}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 375}
+  m_SizeDelta: {x: 235.03662, y: 29.402374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &886317975
 SpriteRenderer:
@@ -3738,7 +3738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hit "E" to pick up
+  m_Text: Hit "E" or button to pick up
 --- !u!222 &886317977
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8855,7 +8855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4631093839257065873
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class Goblin_Bow : Goblin_Bass
         CheckPlayerApproaching();
 
          
-        RotateSocketFuc(RotateSocket.transform.position, Current_Tartget.transform.position, 30);
+        // RotateSocketFuc(RotateSocket.transform.position, Current_Tartget.transform.position, 30);
 
         RotateTic += Time.deltaTime;
         if (RotateTic > 1f)
@@ -82,8 +82,8 @@ public class Goblin_Bow : Goblin_Bass
         m_HP -= damage;
         if(m_HP <=0)
         {
-            m_StateAnim = StateAnim.Die;
-            m_Anim.Play("Die");
+            //m_StateAnim = StateAnim.Die;
+            //m_Anim.Play("Die");
             StartCoroutine(DieState());
             return;
         }
