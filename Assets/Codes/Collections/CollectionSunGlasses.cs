@@ -16,20 +16,20 @@ public class CollectionSunGlasses : CollectionsAction
     void Update()
     {
 
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PersistentData.update();
-            fc.ExecuteBlock("SunGlasses");
-        	PickUp();
+        if(Input.GetKeyDown(KeyCode.E)){
+            //PersistentData.update();
+            
+            PickUp();
         }
         
     }
 
     void PickUp(){
         
-            /*GameObject.Find("LevelLoader").
-            GetComponent<LevelLoader>().MoveToNextLevel();
-            PersistentData.update();*/
-        AudioManager.instance.Play("Sound/pickup");
-    	Destroy(gameObject);
+        if (pickUpAllowed) {
+            AudioManager.instance.Play("Sound/pickup");
+            Destroy(gameObject);
+            fc.ExecuteBlock("SunGlasses");
+        }
     }
 }

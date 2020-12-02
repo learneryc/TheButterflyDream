@@ -17,9 +17,7 @@ public class CollectionItem : CollectionsAction
     void Update()
     {
 
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
-            PersistentData.update();
-            fc.ExecuteBlock(BlockName);
+        if(Input.GetKeyDown(KeyCode.E)){
         	PickUp();
         }
         
@@ -27,10 +25,11 @@ public class CollectionItem : CollectionsAction
 
     void PickUp(){
         
-            /*GameObject.Find("LevelLoader").
-            GetComponent<LevelLoader>().MoveToNextLevel();
-            PersistentData.update();*/
-        AudioManager.instance.Play("Sound/pickup");
-    	Destroy(gameObject);
+        if (pickUpAllowed){
+            base.PickUp();
+            //PersistentData.update();
+            fc.ExecuteBlock(BlockName);
+        }
+        
     }
 }

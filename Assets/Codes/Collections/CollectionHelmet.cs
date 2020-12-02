@@ -14,8 +14,16 @@ public class CollectionHelmet : CollectionsAction
     // Update is called once per frame
     void Update()
     {
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E)){
+        if(Input.GetKeyDown(KeyCode.E)){
         	PickUp();
+            
+        }
+    }
+
+    void PickUp() {
+        
+        if (pickUpAllowed) {
+            base.PickUp();
             playerhelmet.SetActive(true);
             photo.SetActive(true);
             PersistentData.setMagic1(1);
