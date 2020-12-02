@@ -10,6 +10,7 @@ public class PlayMenu : MonoBehaviour
 	public Animator transition;
 	public string trigger = "";
 	public float transitionTime = 1f;
+	public float animationTime = 0.2f;
 
 	public Button NewGame;
 	public Button Resume;
@@ -42,6 +43,7 @@ public class PlayMenu : MonoBehaviour
 
 	IEnumerator LoadLevel() {
 		if (trigger!="") {
+			yield return new WaitForSeconds(animationTime);
 			transition.SetTrigger(trigger);
 			yield return new WaitForSeconds(transitionTime);
 			if (SceneName != "") SceneManager.LoadScene(SceneName);

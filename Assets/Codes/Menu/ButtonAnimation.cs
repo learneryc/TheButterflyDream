@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class ButtonAnimation : MonoBehaviour
 {
 	public float speed = 0.8f;
+	public bool pause = false;
+	public int pauseAngle = 1;
+	public int pauseTime = 60;
 	private Vector3 rotationChange;
+	private int angle = 0;
+	private int rIterator = 0;
+	private bool pauseRotation=false;
 
 	public float scale = -0.1f;
 	public int size = 80;
 	private Vector3[] scaleChange;
-	private int rIterator = 0;
+	private int sIterator = 0;
 
 	public bool fadingColor = false;
 	public int fadingFactor = 40;
@@ -47,9 +53,25 @@ public class ButtonAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Rotate(rotationChange);
-        this.transform.localScale += scaleChange[rIterator];
-        rIterator = (rIterator+1)%size;
+    	if (pause) {
+    		if (pauseRotation) {
+    			if (rIterator == pauseTime) {
+    				pauseRotation = false;
+    				rIterator = 0;
+    			}
+    			rIterator++;
+    		} else {
+    			if (angle == 0) {
+    				pauseRotation = true;
+    			}
+    			this.transform.Rotate(rotationChange);
+    			angle = (angle+(int)speed)%pauseAngle;
+    		}
+    	} else {
+			this.transform.Rotate(rotationChange);
+		}
+        this.transform.localScale += scaleChange[sIterator];
+        sIterator = (sIterator+1)%size;
 
         if (fadingColor) fadeColor();
     }
