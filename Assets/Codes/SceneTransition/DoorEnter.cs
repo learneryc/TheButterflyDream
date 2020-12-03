@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DoorEnter : MonoBehaviour
 {
     public Transform backDoor;
+    public float waitTime = 1f;
+    public Animator doorAnimator;
 
     private Transform playerTransform;
 
@@ -17,6 +19,7 @@ public class DoorEnter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        doorAnimator = GetComponentInChildren<Animator>();
         enterDoorText.gameObject.SetActive(false);
         playerTransform = GameObject.Find("Jack").transform;
         Control = GameObject.Find("Control").GetComponent<ButtonsSwitch>();
@@ -47,12 +50,18 @@ public class DoorEnter : MonoBehaviour
     }
     public void transform() {
         if (isDoor) {
-            Vector3 pos = playerTransform.position;
-            pos.x = backDoor.position.x;
-            pos.y = backDoor.position.y - 0.8f;
-            playerTransform.position = pos;
-            Debug.Log(playerTransform.position);
-            System.Threading.Thread.Sleep(100);
+            doorAnimator.SetTrigger("open");
+            StartCoroutine(teleport());
         }
+    }
+
+    IEnumerator teleport() {
+        yield return new WaitForSeconds(waitTime);
+        Vector3 pos = playerTransform.position;
+        pos.x = backDoor.position.x;
+        pos.y = backDoor.position.y - 0.8f;
+        playerTransform.position = pos;
+        Debug.Log(playerTransform.position);
+        System.Threading.Thread.Sleep(100);
     }
 }
