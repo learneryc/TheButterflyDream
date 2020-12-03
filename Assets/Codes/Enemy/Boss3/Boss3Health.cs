@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class Boss3Health : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class Boss3Health : MonoBehaviour
             bossHealth.SetActive(false);
             Destroy(gameObject);
             // RunAway();
+            SayStory();
 		}
 	}
 
@@ -83,7 +85,10 @@ public class Boss3Health : MonoBehaviour
         }
     }
 
-
+    public void SayStory(){
+        Flowchart fc = GameObject.Find("Flowchart").GetComponent<Fungus.Flowchart>();
+        fc.ExecuteBlock("Ending");
+    }
 
 
 }

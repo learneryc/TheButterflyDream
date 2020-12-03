@@ -21,6 +21,7 @@ public class AutoMove : MonoBehaviour
 
         if(target [i].position.x > 6){
         
+        //if(!targetName.Equals("Final"))
         transform.LookAt (target [i]);
 
         if(targetName.Equals("Rose")){

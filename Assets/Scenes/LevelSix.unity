@@ -20085,7 +20085,12 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 197273719}
   selectedCommands:
+  - {fileID: 197273713}
   - {fileID: 197273707}
+  - {fileID: 197273712}
+  - {fileID: 197273711}
+  - {fileID: 197273709}
+  - {fileID: 197273708}
   variables: []
   description: 
   stepPause: 0
