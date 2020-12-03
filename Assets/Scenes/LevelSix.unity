@@ -19802,7 +19802,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 753688753}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -19823,7 +19823,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1985278888}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -19844,7 +19844,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 357372778}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -19884,7 +19884,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1336921747}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -19905,7 +19905,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 2107000658}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -19926,7 +19926,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1100491268}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -20085,7 +20085,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 197273719}
   selectedCommands:
-  - {fileID: 197273710}
+  - {fileID: 197273707}
   variables: []
   description: 
   stepPause: 0
@@ -20140,6 +20140,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!1 &357372778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964044631326164, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &383388790
 GameObject:
   m_ObjectHideFlags: 0
@@ -20628,6 +20634,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &753688753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046041437862, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &849023572
 GameObject:
   m_ObjectHideFlags: 0
@@ -20972,6 +20984,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066439619}
   m_CullTransparentMesh: 0
+--- !u!1 &1100491268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3677543499851277820, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1108505574
 GameObject:
   m_ObjectHideFlags: 0
@@ -21409,6 +21427,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1336921747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046122947335, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1341606890
 GameObject:
   m_ObjectHideFlags: 0
@@ -22418,6 +22442,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1985278888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964045662213528, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048237837
 GameObject:
   m_ObjectHideFlags: 0
@@ -22529,3 +22559,9 @@ Transform:
   m_Father: {fileID: 173999972}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2107000658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046386616704, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399366024}
+  m_PrefabAsset: {fileID: 0}

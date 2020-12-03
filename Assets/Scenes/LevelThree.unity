@@ -1023,6 +1023,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1477803738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &160543246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046122947335, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 859597429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &167399108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1149,7 +1155,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.33461905, y: 11.689645}
+  m_Offset: {x: -4, y: 5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1160,7 +1166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.296201, y: 26.37929}
+  m_Size: {x: 10, y: 20}
   m_EdgeRadius: 0
 --- !u!95 &169805220
 Animator:
@@ -1189,7 +1195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169805216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.14, y: -2.6, z: 0}
+  m_LocalPosition: {x: 6.06, y: -2.6, z: 0}
   m_LocalScale: {x: 0.50462, y: 0.50462, z: 0.50462}
   m_Children:
   - {fileID: 1664452049}
@@ -2596,6 +2602,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4186536141794408, guid: 59aed4361b339e2458cdb2733b0a8ab6,
     type: 3}
   m_PrefabInstance: {fileID: 637845234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &328957648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3677543499851277820, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 859597429}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &355097534
 GameObject:
@@ -25441,6 +25453,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1994964045662213528, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1994964045907757861, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_RootOrder
@@ -25713,6 +25730,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862542376}
   m_CullTransparentMesh: 0
+--- !u!1 &902686023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964045662213528, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 859597429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &910301581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4647822470045712, guid: 26de7c5f0960c5d46b3073787803c9b1,
@@ -27593,6 +27616,7 @@ GameObject:
   - component: {fileID: 1322931616}
   - component: {fileID: 1322931615}
   - component: {fileID: 1322931614}
+  - component: {fileID: 1322931622}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -27614,7 +27638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: Try to use it in this level.
+  storyText: Try to use to defeat enemy.
   description: 
   character: {fileID: 1582052413}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -27924,7 +27948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: Click the Icon to use fire ball attack.
+  storyText: Click the new button on right to use fire ball attack.
   description: 
   character: {fileID: 1582052413}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -27992,6 +28016,7 @@ MonoBehaviour:
   - {fileID: 1322931610}
   - {fileID: 1322931609}
   - {fileID: 1322931608}
+  - {fileID: 1322931622}
   - {fileID: 1322931517}
   - {fileID: 1322931527}
   - {fileID: 1322931526}
@@ -28016,11 +28041,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 926.90533, y: 59.155632}
+  scrollPos: {x: 1451.3138, y: 100.29817}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.69
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -28028,9 +28053,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1322931573}
-  selectedCommands:
-  - {fileID: 1322931614}
+  - {fileID: 1322931559}
+  selectedCommands: []
   variables:
   - {fileID: 1322931561}
   description: 
@@ -28096,8 +28120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: "You can press '\u2191' to enter it. It will teleport you to another
-    gate."
+  storyText: You can use iteration button to enter it. It will teleport you to another
+    gate.
   description: 
   character: {fileID: 1622056460}
   portrait: {fileID: 21300000, guid: 2ba1540e2c90d47cda83fdc8f13890e9, type: 3}
@@ -28870,7 +28894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 57.573853
     y: 0.2610321
-    width: 79
+    width: 80.289856
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29536,7 +29560,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29582,7 +29606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 0
-  storyText: Press the second magic button, you can attack much faster.
+  storyText: Press the new magic button on the right, you can attack much faster.
   description: 
   character: {fileID: 1622056460}
   portrait: {fileID: 21300000, guid: 2ba1540e2c90d47cda83fdc8f13890e9, type: 3}
@@ -29638,7 +29662,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29659,7 +29683,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29680,7 +29704,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29701,7 +29725,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29722,7 +29746,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29743,7 +29767,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29764,7 +29788,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29785,7 +29809,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29806,7 +29830,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29827,7 +29851,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29848,7 +29872,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29869,7 +29893,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29890,7 +29914,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 902686023}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29911,7 +29935,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29932,7 +29956,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -29953,7 +29977,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29974,7 +29998,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -29995,7 +30019,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30016,7 +30040,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30037,7 +30061,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30058,7 +30082,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30079,7 +30103,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30100,7 +30124,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30121,7 +30145,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30142,7 +30166,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 160543246}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30163,7 +30187,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30184,7 +30208,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30247,7 +30271,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 328957648}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30268,7 +30292,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 902686023}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30289,7 +30313,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30310,7 +30334,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30331,7 +30355,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30352,7 +30376,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1727380085}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30373,7 +30397,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -30394,7 +30418,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -30415,7 +30439,28 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1322931622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322931512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1676671890}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -31572,7 +31617,7 @@ GameObject:
   - component: {fileID: 1622056461}
   - component: {fileID: 1622056460}
   m_Layer: 0
-  m_Name: npc1
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31911,6 +31956,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1676671890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964044631326164, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 859597429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1685208010
 GameObject:
   m_ObjectHideFlags: 0
@@ -32233,6 +32284,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716105258}
   m_CullTransparentMesh: 0
+--- !u!1 &1727380085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046386616704, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 859597429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1762389832
 GameObject:
   m_ObjectHideFlags: 0

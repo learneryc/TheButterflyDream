@@ -2318,6 +2318,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 412502145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &416482375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046122947335, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1684845460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &426165084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,6 +3172,12 @@ Transform:
   m_Father: {fileID: 1956802826}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &698131249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3677543499851277820, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1684845460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707893565
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,6 +4152,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &856863590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1994964046386616704, guid: 9c531bdc497c54d958409a292876d08d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1684845460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &857664979
 GameObject:
   m_ObjectHideFlags: 0
@@ -6911,7 +6929,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 416482375}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -6932,7 +6950,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 856863590}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -6953,7 +6971,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 698131249}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -6974,7 +6992,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 416482375}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -6995,7 +7013,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 856863590}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -7016,7 +7034,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 698131249}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -7037,7 +7055,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 416482375}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -7058,7 +7076,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 856863590}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -7079,7 +7097,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
+    gameObjectVal: {fileID: 698131249}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -7385,6 +7403,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1994964044631326164, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -7490,10 +7513,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1994964045662213528, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1994964045907757861, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994964046041437862, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8793535164005702795, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
