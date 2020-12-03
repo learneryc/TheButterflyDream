@@ -393,6 +393,11 @@ PrefabInstance:
       propertyPath: trigger
       value: Crossfade
       objectReference: {fileID: 0}
+    - target: {fileID: 8318984700524015050, guid: 546a7c1295a7d4a9f87778efa2e963d5,
+        type: 3}
+      propertyPath: saveScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8318984700524015051, guid: 546a7c1295a7d4a9f87778efa2e963d5,
         type: 3}
       propertyPath: m_Name

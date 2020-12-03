@@ -10,11 +10,14 @@ public class LevelLoader : MonoBehaviour
     public string trigger = "";
 	public float transitionTime = 1f;
 	public float videoLength = 0f;
+
+    public bool saveScene = true;
 	
     
     void Start()
     {
         StartCoroutine(LoadLevel());
+        if (saveScene) PersistentData.update();
     }
 
     public void MoveToNextLevel(string nextScene)
