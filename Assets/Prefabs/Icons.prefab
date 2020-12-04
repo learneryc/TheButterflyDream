@@ -360,12 +360,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 3
   pause: 0
   pauseAngle: 1
   pauseTime: 60
   scale: -0.1
-  size: 80
+  size: 30
   fadingColor: 0
   fadingFactor: 40
 --- !u!1 &1994964044509215333
@@ -455,11 +455,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -0.1
+  speed: -1.5
   pause: 0
   pauseAngle: 1
   pauseTime: 60
-  scale: 0.15
+  scale: 0.3
   size: 260
   fadingColor: 0
   fadingFactor: 40
@@ -995,7 +995,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1994964045613062840}
   pauseButton: {fileID: 1994964044594031385}
   PauseButtonLength: 0.2
-  clickFrames: 26
+  clickFrames: 12
 --- !u!114 &8502792572463754941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,7 +4090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: -0.1
-  size: 10
+  size: 6
 --- !u!1 &1994964045657777760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,7 +4240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: -0.1
-  size: 10
+  size: 6
 --- !u!1 &1994964045662213528
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,7 +4488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: -0.1
-  size: 10
+  size: 6
 --- !u!1 &1994964045835129671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,10 +5021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -1
+  speed: -5
   pause: 1
   pauseAngle: 90
-  pauseTime: 200
+  pauseTime: 30
   scale: 0
   size: 1
   fadingColor: 0
@@ -6554,7 +6554,7 @@ MonoBehaviour:
   scale: 0
   size: 1
   fadingColor: 1
-  fadingFactor: 300
+  fadingFactor: 180
 --- !u!1 &1994964046386616704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6851,14 +6851,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
   pause: 1
   pauseAngle: 90
-  pauseTime: 200
+  pauseTime: 40
   scale: 0
   size: 1
   fadingColor: 1
-  fadingFactor: 300
+  fadingFactor: 180
 --- !u!1 &2712166684726867996
 GameObject:
   m_ObjectHideFlags: 0

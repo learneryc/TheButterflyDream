@@ -20,6 +20,7 @@ public class ClickAnimation : MonoBehaviour
 			scaleChange[i] = -change;
 		}
 		sIterator = size;
+		print (sIterator);
 	}
 
     // Update is called once per frame

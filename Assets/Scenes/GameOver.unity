@@ -1245,12 +1245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 3
   pause: 0
   pauseAngle: 1
   pauseTime: 60
   scale: -0.1
-  size: 80
+  size: 30
   fadingColor: 0
   fadingFactor: 40
 --- !u!114 &1171787270
@@ -1340,11 +1340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b746731c95f63439caa81ed2367350f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -0.1
+  speed: -1.5
   pause: 0
   pauseAngle: 1
   pauseTime: 60
-  scale: 0.15
+  scale: 0.3
   size: 260
   fadingColor: 0
   fadingFactor: 40
