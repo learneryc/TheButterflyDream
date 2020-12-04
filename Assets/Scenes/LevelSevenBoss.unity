@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ead76db3a0348b58ad8c6505136a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magic1: {fileID: 7528591603336462185, guid: ca7075a5a5405425dba6b04d01658bb8, type: 3}
+  magic1: {fileID: 7528591603336462185, guid: 3ef499b36ab834ee5a9c7cd272761a4c, type: 3}
   magic2: {fileID: 2577540322041638654, guid: d9b7e60515bae4b71b44390e32de01f4, type: 3}
   magic3: {fileID: 2972452259866446152, guid: a2c39b2f2349943c6959f6b5c2ae940b, type: 3}
   healhealth: {fileID: 4985483757072088910, guid: 05a29fbceffba447b88128b925505729,
@@ -3430,7 +3430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233465782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -903.61, y: -510.21, z: -0.058834143}
+  m_LocalPosition: {x: -893.26, y: -502.12, z: -0.058834143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152846354}
@@ -3671,8 +3671,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355071608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7240909, y: -2.8509965, z: 139.75677}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.654, y: -2.721, z: 139.75677}
+  m_LocalScale: {x: 1.1352783, y: 1.1352783, z: 1.1352783}
   m_Children: []
   m_Father: {fileID: 1870499497}
   m_RootOrder: 2
@@ -8385,7 +8385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2096705170
 MonoBehaviour:
   m_ObjectHideFlags: 0

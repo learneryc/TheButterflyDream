@@ -10,6 +10,7 @@ public class FireAttack : MonoBehaviour
     public float distance = 5f;
     Vector2 pos ;
     public Rigidbody2D rb;
+    public bool islevelup = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class FireAttack : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
             other.GetComponent<Enemy>().TakeDamage(damage);
-            Destroy(gameObject);
+            if(!islevelup)Destroy(gameObject);
         }
         if(other.gameObject.CompareTag("Boss")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
             
@@ -41,15 +42,15 @@ public class FireAttack : MonoBehaviour
             if(other.gameObject.name == "Boss2"){
                 other.GetComponent<Boss2Health>().TakeDamage(damage);
             }
-            Destroy(gameObject);
+            if(!islevelup)Destroy(gameObject);
         }
         if(other.gameObject.CompareTag("Goblin")&& other.GetType().ToString() == "UnityEngine.CapsuleCollider2D"){
             other.GetComponent<Goblin_Bass>().TakeDamage(damage);
-            Destroy(gameObject);
+            if(!islevelup)Destroy(gameObject);
         }
         if(other.gameObject.CompareTag("Boss3")){
             GameObject.Find("Boss3").GetComponent<Boss3Health>().TakeDamage(damage);
-            Destroy(gameObject);
+            if(!islevelup)Destroy(gameObject);
         }
     }
 }
