@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06611824, y: 1.6235249}
+  m_Offset: {x: -0.013871193, y: 1.6235249}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.901016, y: 3.9877362}
+  m_Size: {x: 18.196604, y: 3.9877362}
   m_EdgeRadius: 0
 --- !u!1 &1008371766652724
 GameObject:
@@ -285,7 +285,7 @@ MonoBehaviour:
   DieTime: 0.5
   AttackAllow: 1
   AttackCD: 1.5
-  AtttackDis: 3.5
+  AtttackDis: 4
   Arrow: {fileID: 1491663075309676, guid: f8bcfda1efc5d4249a8593f50cbf0331, type: 3}
   RotateSocket: {fileID: 4330466764287538}
   WeaponSocket: {fileID: 1520382577768730}
