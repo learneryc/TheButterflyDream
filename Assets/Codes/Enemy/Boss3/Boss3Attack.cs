@@ -21,6 +21,7 @@ public class Boss3Attack : MonoBehaviour
     public GameObject goblin2;
     public GameObject goblin3;
     public GameObject goblinPos;
+    public GameObject light;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +42,13 @@ public class Boss3Attack : MonoBehaviour
     }
 
     public void CallGoblin1(){
-        Instantiate(goblin1,new Vector2(goblinPos.transform.position.x ,-2.8f),Quaternion.identity);
-        //Instantiate(goblin2,new Vector2(goblinPos.transform.position.x ,-2.8f),Quaternion.identity);
+        Instantiate(light,goblinPos.transform.position,Quaternion.identity);
+        Instantiate(goblin1,goblinPos.transform.position,Quaternion.identity);
+        
     }
     public void CallGoblin2(){
-        //Instantiate(goblin3,new Vector2(goblinPos.transform.position.x ,-2.8f),Quaternion.identity);
-        Instantiate(goblin2,new Vector2(goblinPos.transform.position.x ,-2.8f),Quaternion.identity);
+        Instantiate(light,goblinPos.transform.position,Quaternion.identity);
+        Instantiate(goblin2,goblinPos.transform.position,Quaternion.identity);
     }
     public void LightningAttack(){
         LightningTime = true;

@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Current_Tartget: {fileID: 0}
-  m_HP: 5
+  m_HP: 6
   m_moveSpeed: 1
   m_StateAnim: 0
   AtttackDis: 1
