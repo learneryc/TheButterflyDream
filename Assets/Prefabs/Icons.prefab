@@ -3311,7 +3311,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8502792572463754941}
         m_MethodName: SetMainVolume
         m_Mode: 0
         m_Arguments:
@@ -3633,7 +3633,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8502792572463754941}
         m_MethodName: setSoundEffectVolume
         m_Mode: 0
         m_Arguments:
@@ -6045,7 +6045,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8502792572463754941}
         m_MethodName: SetBGMVolume
         m_Mode: 0
         m_Arguments:
