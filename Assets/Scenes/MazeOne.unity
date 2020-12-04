@@ -921,7 +921,7 @@ MonoBehaviour:
   healhealth: {fileID: 0}
   firePoint: {fileID: 638745124}
   magic1CDTime: 5
-  magic2CDTime: 1
+  magic2CDTime: 20
   magic2LastTime: 5
   magic3CDTime: 20
   healHealthLastTime: 1.5
