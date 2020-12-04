@@ -946,6 +946,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1622037687}
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994964045109920847, guid: 9c531bdc497c54d958409a292876d08d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1994964045907757861, guid: 9c531bdc497c54d958409a292876d08d,
         type: 3}
       propertyPath: m_RootOrder
