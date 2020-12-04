@@ -61,11 +61,11 @@ public class ButtonAnimation : MonoBehaviour
     			}
     			rIterator++;
     		} else {
+    			this.transform.Rotate(rotationChange);
+    			angle = (angle+(int)speed)%pauseAngle;
     			if (angle == 0) {
     				pauseRotation = true;
     			}
-    			this.transform.Rotate(rotationChange);
-    			angle = (angle+(int)speed)%pauseAngle;
     		}
     	} else {
 			this.transform.Rotate(rotationChange);
