@@ -1634,7 +1634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: Rose is waitting for you! Let's Move!
+  storyText: Rose is waiting for you! Let's Move!
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -1895,7 +1895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: Becareful! If you fall down, you will lose health and restart from here.
+  storyText: Be careful! If you fall down, you will lose health and restart from
+    here.
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -2323,8 +2324,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
-  storyText: When you close to it, an interaction button will pops up on the right.
-    Press that button to pick it up.
+  storyText: When you are close to it, an interaction button will pops up on the
+    right. Press that button to pick it up.
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
@@ -2379,7 +2380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: The bottle can help you to recover your health.
+  storyText: The potion can help you to recover your health.
   description: 
   character: {fileID: 857094758}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}

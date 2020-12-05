@@ -503,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: You have a sunglassess and a photo. Do you know what are them?
+  storyText: You have a sunglasses and a photo. Do you know what are them?
   description: 
   character: {fileID: 2072255559}
   portrait: {fileID: 21300000, guid: c7cf80766771a4db291afa80837a7c75, type: 3}
