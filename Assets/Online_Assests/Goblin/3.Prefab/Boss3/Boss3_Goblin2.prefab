@@ -430,7 +430,7 @@ MonoBehaviour:
   AtttackDis: 1
   GoblinType: 1
   StuneTime: 0.3
-  DieTime: 0.5
+  DieTime: 0
   AttackAllow: 1
   AttackCD: 1
 --- !u!1 &1549115049472692

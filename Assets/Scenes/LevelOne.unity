@@ -8580,7 +8580,7 @@ MonoBehaviour:
     type: 3}
   firePoint: {fileID: 837675289}
   magic1CDTime: 5
-  magic2CDTime: 5
+  magic2CDTime: 20
   magic2LastTime: 5
   magic3CDTime: 10
   healHealthLastTime: 1.5

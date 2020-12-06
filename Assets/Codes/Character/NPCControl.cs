@@ -15,7 +15,7 @@ public class NPCControl : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D other){
+     void OnTriggerEnter2D(Collider2D other){
 
         if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
@@ -24,7 +24,7 @@ public class NPCControl : MonoBehaviour
         }
     }
 
-    public void OnTriggerExit2D(Collider2D other){
+     void OnTriggerExit2D(Collider2D other){
         if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             canChat = false;

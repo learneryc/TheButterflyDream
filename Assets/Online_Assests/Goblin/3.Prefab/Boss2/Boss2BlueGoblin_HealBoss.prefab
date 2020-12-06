@@ -185,7 +185,7 @@ MonoBehaviour:
   m_StateAnim: 0
   m_damage: 1
   StuneTime: 0.2
-  DieTime: 0.5
+  DieTime: 0
   AttackAllow: 1
   AttackCD: 3
   AtttackDis: 4
